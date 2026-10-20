@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Начало', href: '/', title: 'Отиди към началната страница' },
+  { label: 'Услуги', href: '/uslugi/', title: 'Към каталога с всички услуги' },
+  { label: 'Ремонт на ECU компютър' },
+];
+
+const keywords = [
+  'ремонт на ECU компютър',
+  'ремонт на двигателен компютър',
+  'клониране на ECU София',
+  'проблем с запалване компютър',
+  'Bosch EDC16 EDC17 MED17 ремонт',
+];
+---
+
+<BaseLayout
+  title="Ремонт на ECU Двигателен Компютър и Клониране | AutoElektronik"
+  description="Професионален ремонт и клониране на двигателни компютри (ECU / ECM). Подмяна на крайни стъпала, възстановяване след късо съединение и 12 месеца гаранция."
+  keywords={keywords}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Hero Section -->
+  <section class="py-12 lg:py-16 bg-gradient-to-b from-brand-50/70 to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+            Високотехнологичен ремонт
+          </span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Ремонт на ECU компютър и клониране на модули
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Двигателният компютър (<strong>ECU / Engine Control Unit</strong>) е мозъкът на автомобила. При повреда двигателят може да прекъсва на определени цилиндри, да губи мощност или изобщо да откаже да запали. В AutoElektronik разполагаме с лабораторна апаратура за тестване и хардуерно възстановяване на платките на компонентно ниво.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a
+              href="/otkrii-problema/"
+              title="Стартирай бързия въпросник за диагностика на двигателен компютър"
+              class="px-6 py-3 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm transition-all shadow"
+            >
+              Провери симптом на ECU
+            </a>
+            <a
+              href="/kontakti/"
+              title="Свържи се с наш инженер за консултация по ремонт на ECU"
+              class="px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-semibold text-sm transition-all"
+            >
+              Запитване за ремонт
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-800 bg-slate-900">
+            <img
+              src="/images/service-ecu.svg"
+              width="800"
+              height="500"
+              alt="Стенд за диагностика и клониране на микропроцесори в ECU двигателен компютър"
+              class="w-full h-auto object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- In-depth Author Content Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Section 1: Typical ECU Failures -->
+      <article class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+          Какви са симптомите при дефектирал двигателен компютър?
+        </h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+          Повредите в ECU могат да бъдат причинени от късо съединение в инсталацията, дефектирала запалителна бобина, пренапрежение от алтернатора или проникване на влага през уплътненията. Основните признаци за повреда са:
+        </p>
+
+        <!-- Unordered List per Requirement #13 -->
+        <ul class="space-y-3 pt-2">
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✕</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Липса на сигнал към запалителна бобина или инжектор:</strong>
+              <span class="text-slate-600"> Двигателят работи на 3 или 2 цилиндъра. Смяната на свещи и бобини не решава проблема, защото е изгорял управляващият транзистор (MOSFET driver) вътре в компютъра.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✕</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Загуба на 5V референтно захранване:</strong>
+              <span class="text-slate-600"> В паметта за грешки се записват десетки датчици едновременно (педал на газта, MAP сензор, дебитомер, позиция на разпределителен вал). Причината е дефектирал стабилизатор на напрежение в ECU.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✕</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Компютърът не се свързва с диагностичния тестер:</strong>
+              <span class="text-slate-600"> Не свети лампата Check Engine при подаване на контакт или релетата на горивната помпа щракат хаотично.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✕</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Постоянно работещ вентилатор на радиатора:</strong>
+              <span class="text-slate-600"> При липса на коректни данни от температурния сензор, защитният алгоритъм на ECU пуска охладителните перки на максимална мощност.</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Section 2: Laboratory Process -->
+      <article class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">
+          Как протича процедурата по тестване и ремонт на ECU?
+        </h2>
+        
+        <!-- Ordered List per Requirement #13 -->
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">1</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Bench тестване без разглобяване</h3>
+              <p class="text-sm text-slate-600 mt-1">
+                Свързваме компютъра към емулатор на сигнали (CAN/K-Line/BDM). Проверяваме консумацията на ток и дали контролерът „буутва“ нормално.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">2</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Пълен бекъп (Clone Backup)</h3>
+              <p class="text-sm text-slate-600 mt-1">
+                Преди да извършим каквато и да е намеса по платката, изчитаме пълното съдържание на паметите (Flash, EEPROM, Microcontroller) чрез JTAG/Bootloader протокол, за да гарантираме 100% сигурност на софтуера.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">3</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Компонентен ремонт и подмяна на чипове</h3>
+              <p class="text-sm text-slate-600 mt-1">
+                Разпояваме дефектиралите BGA/QFP чипове на инфрачервена поялна станция. Монтираме нови оригинални интегрални схеми от доказани доставчици.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">4</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Тест под натоварване и херметизация</h3>
+              <p class="text-sm text-slate-600 mt-1">
+                Електронният блок се тества на динамичен стенд, симулиращ обороти до 6000 RPM. След успешен тест корпусът се запечатва със специален полиуретанов уплътнител за защита от влага.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <!-- Section 3: Supported Brands & Controllers -->
+      <article class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">
+          Поддържани марки и типове двигателни компютри
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs font-semibold">
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Bosch EDC15 / EDC16</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Bosch EDC17 / MED17</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Siemens / Continental VDO</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Delphi DCM3.x / DCM6.x</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Magneti Marelli IAW</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Denso (Toyota / Subaru)</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Visteon (Ford)</div>
+          <div class="p-3 rounded-lg bg-slate-100 text-slate-800">Lucas EPIC</div>
+        </div>
+      </article>
+
+      <!-- Internal Cross-Links (Req #17) -->
+      <div class="pt-6 border-t border-slate-200 flex flex-wrap gap-4 items-center justify-between">
+        <div class="text-xs text-slate-500">
+          Свързани услуги:
+          <a href="/uslugi/remont-na-abs-modul/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за ремонт на спирачни ABS модули">Ремонт на ABS модул</a> |
+          <a href="/uslugi/remont-na-avtomobilno-tablo/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за ремонт на автомобилни табла">Ремонт на табло</a>
+        </div>
+        <a
+          href="/otkrii-problema/"
+          title="Направи интерактивния диагностичен тест за двигател"
+          class="text-xs font-bold text-brand-700 hover:text-brand-900 underline"
+        >
+          Диагностичен въпросник &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

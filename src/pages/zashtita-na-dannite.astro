@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Начало', href: '/', title: 'Отиди към началната страница' },
+  { label: 'Защита на данните (GDPR)' },
+];
+
+const keywords = [
+  'политика за поверителност AutoElektronik',
+  'защита на личните данни GDPR',
+  'обработка на лични данни сервиз',
+  'права на потребителите лични данни',
+  'политика за бисквитки автосервиз',
+];
+---
+
+<BaseLayout
+  title="Политика за Защита на Личните Данни (GDPR) — AutoElektronik"
+  description="Политика за поверителност и защита на личните данни съгласно Регламент (ЕС) 2016/679 (GDPR) на специализиран сервиз за автоелектроника AutoElektronik."
+  keywords={keywords}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-700 block mb-2">GDPR Съответствие</span>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Политика за поверителност и защита на личните данни
+        </h1>
+        <p class="text-xs text-slate-400 mt-2">В сила от: 20 октомври 2026 г. | Регламент (ЕС) 2016/679</p>
+      </div>
+
+      <div class="prose prose-slate max-w-none text-sm leading-relaxed space-y-6 text-slate-700">
+        
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-slate-900">1. Администратор на лични данни</h2>
+          <p>
+            Администратор на личните данни е <strong>AutoElektronik</strong>, със седалище и адрес на упражняване на дейността: гр. София, бул. „Цариградско шосе“ №115, имейл: <em>office@autoelektronik-service.bg</em>.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-slate-900">2. Какви лични данни събираме и за какви цели?</h2>
+          <p>Събираме единствено минимално необходимите лични данни за изпълнение на сервизната услуга:</p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><strong>Име и фамилия:</strong> за идентифициране на поръчката и издаване на гаранционна карта.</li>
+            <li><strong>Телефонен номер:</strong> за обратна връзка при готова диагностика или уточняване на детайли по ремонта.</li>
+            <li><strong>Имейл адрес:</strong> за изпращане на писмени сервизни протоколи и оферти.</li>
+            <li><strong>Данни за автомобила (марка, модел, година, VIN/номер на модул):</strong> за техническа съвместимост и софтуерно програмиране.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-slate-900">3. Правно основание и срок на съхранение</h2>
+          <p>
+            Обработката се основава на чл. 6, ал. 1, б. „б“ от GDPR (изпълнение на договор за услуга) и спазване на законовите данъчно-счетоводни изисквания. Данните по издадени гаранционни карти се съхраняват за срока на гаранцията (12 месеца), а счетоводните документи — съгласно сроковете по ДОПК.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-slate-900">4. Вашите права съгласно европейското законодателство</h2>
+          <p>Всеки потребител има следните неотменими права:</p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Право на достъп до обработваните за него лични данни;</li>
+            <li>Право на коригиране при неточности;</li>
+            <li>Право на изтриване („право да бъдеш забравен“);</li>
+            <li>Право на ограничаване на обработването или възражение;</li>
+            <li>Право на жалба до Комисията за защита на личните данни (КЗЛД) на адрес: гр. София 1592, бул. „Проф. Цветан Лазаров” №2.</li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

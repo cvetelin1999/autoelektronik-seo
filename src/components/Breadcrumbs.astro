@@ -1,0 +1,59 @@
+---
+interface Crumb {
+  label: string;
+  href?: string;
+  title?: string;
+}
+
+interface Props {
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+
+// Schema.org BreadcrumbList structured data for rich Google search snippets
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    ...(item.href ? { item: `https://autoelektronik-service.bg${item.href}` } : {}),
+  })),
+};
+---
+
+<nav aria-label="Навигация тип хлебни трохи" class="py-4 border-b border-slate-200/80 bg-slate-50/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ol class="flex items-center flex-wrap gap-2 text-xs sm:text-sm text-slate-500">
+      {items.map((item, index) => {
+        const isLast = index === items.length - 1;
+        return (
+          <li class="flex items-center gap-2">
+            {index > 0 && (
+              <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            )}
+            {isLast || !item.href ? (
+              <span class="font-medium text-slate-900 line-clamp-1" aria-current="page">
+                {item.label}
+              </span>
+            ) : (
+              <a
+                href={item.href}
+                title={item.title || `Отиди към ${item.label}`}
+                class="hover:text-brand-700 transition-colors line-clamp-1"
+              >
+                {item.label}
+              </a>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

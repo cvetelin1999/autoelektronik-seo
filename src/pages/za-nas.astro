@@ -1,0 +1,171 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Начало', href: '/', title: 'Отиди към началната страница' },
+  { label: 'За нас (Лаборатория и екип)' },
+];
+
+const keywords = [
+  'сервиз за автоелектроника София',
+  'лаборатория за ремонт на автокомпютри',
+  'гаранция ремонт на ABS модул',
+  'електронни инженери автоелектроника',
+  'професионален сервиз ECU София',
+];
+---
+
+<BaseLayout
+  title="За нас — Сервиз и Лаборатория за Автоелектроника | AutoElektronik"
+  description="Научи повече за AutoElektronik — лабораторен сервизен център в София, специализиран в рециклиране и ремонт на автомобилни електронни блокове с 12 месеца гаранция."
+  keywords={keywords}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Hero Section -->
+  <section class="py-12 lg:py-16 bg-gradient-to-b from-brand-50/70 to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+            Опит, прецизност и гаранция
+          </span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            За сервиз и лаборатория AutoElektronik
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Ние вярваме, че качественият ремонт на автомобилна електроника изисква академична подготовка по микроелектроника, чисто работно пространство и безкомпромисна лабораторна апаратура.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a
+              href="/uslugi/"
+              title="Прегледай всички наши сервизни услуги"
+              class="px-6 py-3 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm transition-all shadow"
+            >
+              Виж нашите услуги
+            </a>
+            <a
+              href="/kontakti/"
+              title="Виж контакти, телефон и адрес на сервиза в София"
+              class="px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-semibold text-sm transition-all"
+            >
+              Свържи се с нас
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-800 bg-slate-900">
+            <img
+              src="/images/service-lab.svg"
+              width="800"
+              height="500"
+              alt="Лабораторна поялна станция JBC и осцилоскоп за ремонт на автоелектроника"
+              class="w-full h-auto object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- In-depth Author Content Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Section 1: Who We Are -->
+      <article class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+          Инженерният подход в авторемонтите
+        </h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+          Сервизът стартира с ясна мисия — да предостави алтернатива на масовата практика „смени цялата част с нова за 2000+ лева“. Често повредата в един съвременен модул за управление се свежда до компонент на стойност няколко лева: дефектирал кондензатор с ниско вътрешно съпротивление (Low ESR), прекъсната контактна пътечка или студена спойка под микропроцесора.
+        </p>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+          Вместо импровизации с обикновен поялник, в нашата лаборатория се работи с антистатични подложки (ESD safe), прецизни стереомикроскопи с оптично увеличение до 45x и контролирани термопрофили за разпояване, отговарящи на европейските стандарти за надеждност.
+        </p>
+      </article>
+
+      <!-- Section 2: Certification & Standards Graphic -->
+      <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-950 shadow-md">
+        <img
+          src="/images/author-certification.svg"
+          width="800"
+          height="500"
+          alt="Сертификат за стандарт IPC-7711 и 12 месеца писмена гаранция от AutoElektronik"
+          class="w-full h-auto object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Section 3: Why Clients and Mechanics Trust Us -->
+      <article class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">
+          Основни принципи, които ни отличават
+        </h2>
+
+        <!-- Numbered list per Requirement #13 -->
+        <ol class="space-y-4">
+          <li class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">1</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Писмена гаранция 12 месеца</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                Всеки ремонтиран от нас модул (ABS, ECU или табло) получава поименна гаранционна карта с фиксиран срок от 1 година, без значение от изминатите километри.
+              </p>
+            </div>
+          </li>
+
+          <li class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">2</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Безплатна диагностика при извършен ремонт</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                Ако модулът подлежи на ремонт и решите да го възстановим при нас, първоначалната стендова диагностика и тестване са напълно безплатни.
+              </p>
+            </div>
+          </li>
+
+          <li class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-4">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white font-bold flex items-center justify-center flex-shrink-0 text-sm">3</span>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Партньорство с автосервизи в цяла България</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                Работим активно с десетки сервизи от Пловдив, Варна, Бургас, Русе и Стара Загора, които демонтират модулите и ни ги изпращат по куриер (Еконт / Спиди). Връщаме ги рециклирани до 48 часа.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <!-- CTA Footer for About page -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-brand-900 text-white text-center space-y-4">
+        <h2 class="text-xl sm:text-2xl font-bold">Имате съмнение за дефектирала електроника?</h2>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto">
+          Не бързайте да купувате скъпи части на сляпо. Тествайте симптомите в нашия онлайн съветник или се свържете директно с наш специалист.
+        </p>
+        <div class="pt-2 flex justify-center gap-4">
+          <a
+            href="/otkrii-problema/"
+            title="Отвори интерактивния съветник за симптоми"
+            class="px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-sm transition-all"
+          >
+            Тествай симптом онлайн
+          </a>
+          <a
+            href="/kontakti/"
+            title="Свържи се с AutoElektronik"
+            class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm transition-all border border-slate-700"
+          >
+            Контакти и адрес
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

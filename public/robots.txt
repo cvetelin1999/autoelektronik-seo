@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# XML Sitemaps per University Requirement #5
+Sitemap: https://autoelektronik-service.bg/sitemap.xml
+Sitemap: https://autoelektronik-service.bg/image-sitemap.xml
+Sitemap: https://autoelektronik-service.bg/video-sitemap.xml

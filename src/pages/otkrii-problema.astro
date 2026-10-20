@@ -1,0 +1,441 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Начало', href: '/', title: 'Отиди към началната страница' },
+  { label: 'Открий проблема (Диагностичен въпросник)' },
+];
+
+const keywords = [
+  'диагностика на автомобилна електроника',
+  'онлайн тест за повреда на кола',
+  'симптоми повреден ABS модул',
+  'проблем с ECU компютър',
+  'повреда в автомобилно табло',
+];
+---
+
+<BaseLayout
+  title="Открий проблема — Интерактивен диагностичен съветник"
+  description="Интерактивен софтуерен въпросник за бърза ориентировъчна диагностика на автомобилна електроника. Разпознай повредата в ABS, ECU или таблото за 60 секунди."
+  keywords={keywords}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Hero Section -->
+  <section class="py-12 bg-gradient-to-b from-brand-50/50 to-white border-b border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-800 mb-4">
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        Интерактивен лабораторен инструмент (Скриптова страница)
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Открий проблема в автомобилната електроника
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Не знаеш точния технически термин на повредата? Отговори на 3 бързи въпроса и нашият диагностичен алгоритъм ще определи дефектиралия модул и възможностите за ремонт.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Wizard Container (Vanilla JS) -->
+  <section class="py-12 lg:py-16 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Stepper Progress Bar -->
+      <div class="mb-8" aria-label="Прогрес на въпросника">
+        <div class="flex items-center justify-between mb-2">
+          <span id="step-counter" class="text-xs font-bold uppercase tracking-wider text-brand-700">Стъпка 1 от 3</span>
+          <span id="step-title" class="text-xs font-medium text-slate-500">Избор на основен симптом</span>
+        </div>
+        <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-brand-700 rounded-full transition-all duration-300 w-1/3"></div>
+        </div>
+      </div>
+
+      <!-- Card Container -->
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-10">
+        
+        <!-- STEP 1: Symptom Category Selection -->
+        <div id="step-1" class="wizard-step">
+          <h2 class="text-xl font-bold text-slate-900 mb-2">Какъв е главният симптом на автомобила?</h2>
+          <p class="text-sm text-slate-500 mb-6">Избери областта, в която забелязваш неизправност или светнала контролна лампа.</p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <button
+              type="button"
+              class="symptom-btn flex items-start gap-4 p-4 rounded-xl border-2 border-slate-200 hover:border-brand-600 hover:bg-brand-50/50 text-left transition-all group"
+              data-category="abs"
+              title="Избери при проблеми със спирачната система, светещи ABS/ESP лампи или твърд педал"
+            >
+              <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Светят лампи ABS / ESP / Тракшън</span>
+                <span class="text-xs text-slate-500 mt-1 block">Прекъсваща спирачна помпа, блокирало колело, липса на скоростомер.</span>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="symptom-btn flex items-start gap-4 p-4 rounded-xl border-2 border-slate-200 hover:border-brand-600 hover:bg-brand-50/50 text-left transition-all group"
+              data-category="ecu"
+              title="Избери при незапалващ двигател, прекъсване на цилиндри или липса на връзка с ECU"
+            >
+              <div class="w-10 h-10 rounded-lg bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Двигателят не пали / ECU грешка</span>
+                <span class="text-xs text-slate-500 mt-1 block">Липса на искра, дюзите не отварят, авариен режим (Limp mode).</span>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="symptom-btn flex items-start gap-4 p-4 rounded-xl border-2 border-slate-200 hover:border-brand-600 hover:bg-brand-50/50 text-left transition-all group"
+              data-category="tablo"
+              title="Избери при изгаснал километраж, изгорели пиксели или неработещи стрелки"
+            >
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Проблем с табло / дисплей</span>
+                <span class="text-xs text-slate-500 mt-1 block">Изгаснали стрелки, размазани пиксели на бордовия компютър, изгасващо осветление.</span>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="symptom-btn flex items-start gap-4 p-4 rounded-xl border-2 border-slate-200 hover:border-brand-600 hover:bg-brand-50/50 text-left transition-all group"
+              data-category="can"
+              title="Избери при пълна липса на комуникация или произволни грешки по цялата кола"
+            >
+              <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                </svg>
+              </div>
+              <div>
+                <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Липса на комуникация (CAN-Bus)</span>
+                <span class="text-xs text-slate-500 mt-1 block">Диагностичният уред не се свързва с модулите, светят множество системи едновременно.</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Vehicle Brand Selection -->
+        <div id="step-2" class="wizard-step hidden">
+          <h2 class="text-xl font-bold text-slate-900 mb-2">Избери марката на автомобила</h2>
+          <p class="text-sm text-slate-500 mb-6">Различните производители използват специфични доставчици на модули (Bosch, ATE, Continental, Siemens, Magneti Marelli).</p>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+            {['VAG (VW / Audi / Seat / Skoda)', 'BMW / Mini', 'Mercedes-Benz', 'Opel / Vauxhall', 'Peugeot / Citroen', 'Renault / Dacia', 'Toyota / Lexus', 'Ford', 'Друга марка'].map((brand) => (
+              <button
+                type="button"
+                class="brand-btn p-3 rounded-xl border border-slate-200 hover:border-brand-600 hover:bg-brand-50 text-center font-medium text-slate-800 text-sm transition-all"
+                data-brand={brand}
+                title={`Избери автомобил от марка ${brand}`}
+              >
+                {brand}
+              </button>
+            ))}
+          </div>
+
+          <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+            <button
+              type="button"
+              id="back-to-step-1"
+              class="px-4 py-2 text-sm font-semibold text-slate-600 hover:text-slate-900 flex items-center gap-1.5"
+              title="Върни се назад към избор на симптом"
+            >
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              <span>Назад</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Details & Optional Error Code -->
+        <div id="step-3" class="wizard-step hidden">
+          <h2 class="text-xl font-bold text-slate-900 mb-2">Допълнителни детайли за симптома</h2>
+          <p class="text-sm text-slate-500 mb-6">Как се проявява проблемът във времето?</p>
+          
+          <div class="space-y-3 mb-6">
+            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+              <input type="radio" name="timing" value="permanent" class="w-4 h-4 text-brand-700 focus:ring-brand-500" checked />
+              <span class="text-sm font-medium text-slate-800">Постоянно свети / проблемът е непрекъснат</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+              <input type="radio" name="timing" value="intermittent" class="w-4 h-4 text-brand-700 focus:ring-brand-500" />
+              <span class="text-sm font-medium text-slate-800">Прекъсващ проблем (появява се при загрял мотор или друсване)</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+              <input type="radio" name="timing" value="rain" class="w-4 h-4 text-brand-700 focus:ring-brand-500" />
+              <span class="text-sm font-medium text-slate-800">Проявява се след автомивка или дъждовно време (възможна влага/окисление)</span>
+            </label>
+          </div>
+
+          <div class="mb-6">
+            <label for="error-code-input" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+              Код за грешка от OBD диагностика (незадължително)
+            </label>
+            <input
+              type="text"
+              id="error-code-input"
+              placeholder="напр. 01276, 5DF0, P0606, DF017, C1380..."
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+            />
+            <span class="text-xs text-slate-400 mt-1 block">Ако сте закачали диагностичен тестер, въведете записания код на грешката.</span>
+          </div>
+
+          <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+            <button
+              type="button"
+              id="back-to-step-2"
+              class="px-4 py-2 text-sm font-semibold text-slate-600 hover:text-slate-900 flex items-center gap-1.5"
+              title="Върни се назад към избор на марка"
+            >
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              <span>Назад</span>
+            </button>
+            <button
+              type="button"
+              id="generate-diagnosis-btn"
+              class="px-6 py-2.5 rounded-xl bg-brand-700 text-white font-semibold text-sm hover:bg-brand-800 shadow transition-all"
+              title="Генерирай софтуерна диагноза по въведените симптоми"
+            >
+              Генерирай диагноза
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 4: DIAGNOSTIC RESULT SCREEN -->
+        <div id="step-result" class="wizard-step hidden">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Ориентировъчна сервизна преценка</span>
+            <h2 id="result-title" class="text-2xl font-bold text-slate-900 mt-1">Дефект в електронен ABS модул</h2>
+          </div>
+
+          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200 mb-6 space-y-3">
+            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
+              <span class="text-slate-500">Автомобил:</span>
+              <span id="result-brand" class="font-semibold text-slate-900">VAG</span>
+            </div>
+            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
+              <span class="text-slate-500">Вероятна причина:</span>
+              <span id="result-cause" class="font-semibold text-slate-900">Прекъснати алуминиеви микробондинг нишки към хидравличната помпа</span>
+            </div>
+            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
+              <span class="text-slate-500">Възможност за лабораторен ремонт:</span>
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                Висока (95% успеваемост)
+              </span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+              <span class="text-slate-500">Спестяване спрямо нов модул:</span>
+              <span class="font-semibold text-emerald-700">Спестява между 60% и 80% от цената</span>
+            </div>
+          </div>
+
+          <!-- Direct Link to Targeted Service Page -->
+          <div class="mb-6 p-4 rounded-xl bg-brand-50 border border-brand-200 text-center">
+            <p class="text-sm text-brand-900 mb-2">Препоръчваме да се запознаеш с пълната сервизна процедура и цени:</p>
+            <a
+              id="result-service-link"
+              href="/uslugi/remont-na-abs-modul/"
+              title="Прегледай подробната страница за ремонт на ABS модули"
+              class="inline-flex items-center gap-2 font-bold text-brand-700 hover:text-brand-900 underline text-sm"
+            >
+              <span id="result-link-text">Виж детайли за Ремонт на ABS модули</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Rapid Inquiry Contact Form -->
+          <div class="border-t border-slate-200 pt-6">
+            <h3 class="text-base font-bold text-slate-900 mb-3 text-center">Изпрати запитване за този модул</h3>
+            <form id="wizard-lead-form" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  required
+                  placeholder="Вашето име"
+                  class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                />
+                <input
+                  type="tel"
+                  required
+                  placeholder="Телефонен номер"
+                  class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full py-3 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm shadow transition-all"
+                title="Изпрати данните за безплатна сервизна консултация"
+              >
+                Запази час за диагностика / Изпрати по куриер
+              </button>
+              <p id="wizard-form-success" class="text-xs text-emerald-700 font-semibold text-center hidden">
+                Благодарим! Запитването е получено успешно. Ще се свържем с вас в рамките на 30 минути.
+              </p>
+            </form>
+          </div>
+
+          <div class="mt-6 text-center">
+            <button
+              type="button"
+              id="restart-wizard-btn"
+              class="text-xs font-semibold text-slate-500 hover:text-slate-800 underline"
+              title="Започни теста отначало"
+            >
+              Започни нов диагностичен тест
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- UX Technical Disclaimer Note per academic standards -->
+      <div class="mt-6 text-center text-xs text-slate-400 max-w-lg mx-auto">
+        * Този онлайн съветник предоставя предварителна статистическа насока на база най-често срещаните дефекти. Окончателна техническа диагностика се извършва на сервизен стенд и осцилоскоп в нашата лаборатория.
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  // Diagnostic Wizard State Machine
+  let selectedCategory = 'abs';
+  let selectedBrand = 'VAG (VW / Audi / Seat / Skoda)';
+
+  const step1 = document.getElementById('step-1');
+  const step2 = document.getElementById('step-2');
+  const step3 = document.getElementById('step-3');
+  const stepResult = document.getElementById('step-result');
+
+  const counter = document.getElementById('step-counter');
+  const stepTitle = document.getElementById('step-title');
+  const progressBar = document.getElementById('progress-bar');
+
+  // Step 1: Select category
+  document.querySelectorAll('.symptom-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      selectedCategory = btn.getAttribute('data-category') || 'abs';
+      goToStep(2);
+    });
+  });
+
+  // Step 2: Select brand
+  document.querySelectorAll('.brand-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      selectedBrand = btn.getAttribute('data-brand') || 'Друга марка';
+      goToStep(3);
+    });
+  });
+
+  // Back buttons
+  document.getElementById('back-to-step-1')?.addEventListener('click', () => goToStep(1));
+  document.getElementById('back-to-step-2')?.addEventListener('click', () => goToStep(2));
+  document.getElementById('restart-wizard-btn')?.addEventListener('click', () => goToStep(1));
+
+  // Step 3: Finish and diagnose
+  document.getElementById('generate-diagnosis-btn')?.addEventListener('click', () => {
+    showResult();
+  });
+
+  // Form submit handler
+  document.getElementById('wizard-lead-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const successMsg = document.getElementById('wizard-form-success');
+    if (successMsg) successMsg.classList.remove('hidden');
+  });
+
+  function goToStep(step) {
+    step1.classList.add('hidden');
+    step2.classList.add('hidden');
+    step3.classList.add('hidden');
+    stepResult.classList.add('hidden');
+
+    if (step === 1) {
+      step1.classList.remove('hidden');
+      counter.innerText = 'Стъпка 1 от 3';
+      stepTitle.innerText = 'Избор на основен симптом';
+      progressBar.style.width = '33%';
+    } else if (step === 2) {
+      step2.classList.remove('hidden');
+      counter.innerText = 'Стъпка 2 от 3';
+      stepTitle.innerText = 'Избор на марка автомобил';
+      progressBar.style.width = '66%';
+    } else if (step === 3) {
+      step3.classList.remove('hidden');
+      counter.innerText = 'Стъпка 3 от 3';
+      stepTitle.innerText = 'Допълнителни детайли';
+      progressBar.style.width = '100%';
+    }
+  }
+
+  function showResult() {
+    step1.classList.add('hidden');
+    step2.classList.add('hidden');
+    step3.classList.add('hidden');
+    stepResult.classList.remove('hidden');
+
+    counter.innerText = 'Резултат от теста';
+    stepTitle.innerText = 'Препоръчано решение';
+    progressBar.style.width = '100%';
+
+    const resTitle = document.getElementById('result-title');
+    const resBrand = document.getElementById('result-brand');
+    const resCause = document.getElementById('result-cause');
+    const resLink = document.getElementById('result-service-link');
+    const resLinkText = document.getElementById('result-link-text');
+
+    if (resBrand) resBrand.innerText = selectedBrand;
+
+    if (selectedCategory === 'abs') {
+      resTitle.innerText = 'Дефект в електронния блок на ABS/ESP помпата';
+      resCause.innerText = 'Прекъсване на вътрешни бондинг проводници или дефект в соленоидния контролер (често срещано при ATE MK60 / Bosch 8.0/9.0).';
+      resLink.href = '/uslugi/remont-na-abs-modul/';
+      resLinkText.innerText = 'Виж пълна информация за Ремонт на ABS модули';
+    } else if (selectedCategory === 'ecu') {
+      resTitle.innerText = 'Дефект в двигателния компютър (ECU)';
+      resCause.innerText = 'Изгорял краен транзистор (driver) за дюзи/бобини, дефектно 5V референтно захранване или повредена EEPROM/Flash памет.';
+      resLink.href = '/uslugi/remont-na-ecu-kompyutar/';
+      resLinkText.innerText = 'Виж процедура за Ремонт и клониране на ECU';
+    } else if (selectedCategory === 'tablo') {
+      resTitle.innerText = 'Хардуерен дефект в таблото / контролния панел';
+      resCause.innerText = 'Дефектирал микропроцесор (Motorola/Freescale), прекъснат лентов кабел на LCD дисплея или износени стъпкови моторчета на стрелките.';
+      resLink.href = '/uslugi/remont-na-avtomobilno-tablo/';
+      resLinkText.innerText = 'Виж детайли за Ремонт на автомобилни табла';
+    } else {
+      resTitle.innerText = 'Нарушена комуникация по CAN-Bus шината';
+      resCause.innerText = 'Късо съединение между CAN High и CAN Low проводници, повреден CAN трансивър (чип TJA1050) или Gateway модул.';
+      resLink.href = '/uslugi/avtodiagnostika/';
+      resLinkText.innerText = 'Виж детайли за Осцилоскопна автодиагностика';
+    }
+  }
+</script>

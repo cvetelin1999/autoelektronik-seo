@@ -1,0 +1,148 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string[];
+  ogImage?: string;
+  ogType?: string;
+  canonicalUrl?: string;
+  schemaType?: 'LocalBusiness' | 'Service' | 'Article';
+}
+
+const {
+  title,
+  description,
+  keywords = [
+    'автоелектроника',
+    'ремонт на автоелектроника',
+    'ремонт на ABS модул',
+    'ремонт на ECU',
+    'автодиагностика София',
+  ],
+  ogImage = '/images/autoelektronik-social-share.jpg',
+  ogType = 'website',
+  canonicalUrl = Astro.url.href,
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+const siteUrl = 'https://autoelektronik-service.bg';
+const fullOgImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+// Schema.org LocalBusiness structured data
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AutoRepair',
+  name: 'AutoElektronik - Сервиз и лаборатория за автомобилна електроника',
+  image: `${siteUrl}/images/service-lab.jpg`,
+  '@id': `${siteUrl}/#organization`,
+  url: siteUrl,
+  telephone: '+359888123456',
+  priceRange: '$$',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'бул. Цариградско шосе №115',
+    addressLocality: 'София',
+    postalCode: '1784',
+    addressCountry: 'BG',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 42.6617,
+    longitude: 23.3853,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+  ],
+  sameAs: [
+    'https://www.facebook.com/autoelektronik.bg',
+    'https://github.com/autoelektronik',
+  ],
+};
+---
+
+<!DOCTYPE html>
+<html lang="bg" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title} | AutoElektronik</title>
+    <meta name="title" content={`${title} | AutoElektronik`} />
+    <meta name="description" content={description} />
+    {keywords && keywords.length > 0 && (
+      <meta name="keywords" content={keywords.join(', ')} />
+    )}
+    <meta name="author" content="AutoElektronik" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Requirement #24: Facebook Open Graph Tags in <head> -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={`${title} | AutoElektronik`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullOgImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="bg_BG" />
+    <meta property="og:site_name" content="AutoElektronik Сервиз" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={`${title} | AutoElektronik`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullOgImageUrl} />
+
+    <!-- Requirement #26: Google Search Console verification meta tag stub -->
+    <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN_AUTOELEKTRONIK_CSCB700" />
+
+    <!-- Requirement #26: Google Analytics 4 (GA4) stub -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-AELEKTRON700');
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0F766E" />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Skip to main content link for accessibility -->
+    <a 
+      href="#main-content" 
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-50 px-4 py-2 bg-brand-700 text-white rounded-lg shadow-lg"
+      title="Прескочи към основното съдържание на страницата"
+    >
+      Премини към съдържанието
+    </a>
+
+    <!-- Global Header with Strict List Nav -->
+    <Header currentPath={currentPath} />
+
+    <!-- Main Content Container -->
+    <main id="main-content" class="flex-grow">
+      <slot />
+    </main>
+
+    <!-- Global Footer with Links and Requirements -->
+    <Footer />
+  </body>
+</html>

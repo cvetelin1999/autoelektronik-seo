@@ -1,0 +1,138 @@
+---
+const currentYear = new Date().getFullYear();
+
+const serviceLinks = [
+  { href: '/uslugi/remont-na-abs-modul/', label: 'Ремонт на ABS модул', title: 'Специализиран ремонт и тестване на ABS/ESP помпи и електронни блокове' },
+  { href: '/uslugi/remont-na-ecu-kompyutar/', label: 'Ремонт на ECU компютър', title: 'Диагностика, ремонт и клониране на двигателни компютри (ECU)' },
+  { href: '/uslugi/remont-na-avtomobilno-tablo/', label: 'Ремонт на автомобилно табло', title: 'Възстановяване на дисплеи, пиксели, стрелкови уреди и софтуер на табла' },
+  { href: '/uslugi/avtodiagnostika/', label: 'Компютърна автодиагностика', title: 'Дълбока софтуерна и осцилоскопна диагностика на автоелектроника' },
+];
+
+const quickLinks = [
+  { href: '/', label: 'Начална страница', title: 'Към началната страница на AutoElektronik' },
+  { href: '/otkrii-problema/', label: 'Открий проблема (Тест)', title: 'Интерактивен съветник за разпознаване на автоповреди' },
+  { href: '/za-nas/', label: 'За сервиза и лабораторията', title: 'Информация за нашата лабораторна апаратура и гаранция' },
+  { href: '/kontakti/', label: 'Контакти и локация', title: 'Адрес, телефон и локация на сервиза в София' },
+];
+
+const legalLinks = [
+  { href: '/usloviya-za-polzvane/', label: 'Условия за ползване', title: 'Прочети официалните общи условия за ползване на уебсайта' },
+  { href: '/zashtita-na-dannite/', label: 'Защита на личните данни (GDPR)', title: 'Запознай се с нашата политика за поверителност и сигурност на данните' },
+];
+---
+
+<footer class="bg-slate-900 text-slate-300 mt-auto border-t border-slate-800" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Информация за сервиза, правни връзки и навигация</h2>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      
+      <!-- Column 1: Brand & Presentation -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white font-bold">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <span class="text-xl font-bold tracking-tight text-white">
+            Auto<span class="text-brand-400">Elektronik</span>
+          </span>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Високоспециализиран лабораторен сервиз за прецизна диагностика, хардуерен ремонт и софтуерно програмиране на автомобилни електронни модули, ABS помпи и ECU компютри.
+        </p>
+        <div class="pt-2 text-xs text-slate-400 space-y-1">
+          <p><span class="font-semibold text-slate-300">Локация:</span> гр. София, бул. „Цариградско шосе“ №115</p>
+          <p><span class="font-semibold text-slate-300">Телефон:</span> +359 88 812 3456</p>
+          <p><span class="font-semibold text-slate-300">Работно време:</span> Понеделник – Петък: 09:00 – 18:00 ч.</p>
+        </div>
+      </div>
+
+      <!-- Column 2: Core Services (List per Req #13) -->
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-white mb-4">Специализирани услуги</h3>
+        <ul class="space-y-2.5 text-sm">
+          {serviceLinks.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                title={item.title}
+                class="hover:text-brand-400 transition-colors inline-block"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Column 3: Quick Navigation (List per Req #13) -->
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-white mb-4">Бързи връзки</h3>
+        <ul class="space-y-2.5 text-sm">
+          {quickLinks.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                title={item.title}
+                class="hover:text-brand-400 transition-colors inline-block"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Column 4: Standards & External Outgoing Link (Req #15) -->
+      <div class="space-y-4">
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-white mb-4">Стандарти и партньорства</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Работим по международните спецификации за автомобилна диагностика на оригинално оборудване.
+        </p>
+        
+        <!-- Requirement #15: Outgoing external link with title attribute -->
+        <div class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700/60">
+          <span class="text-xs font-semibold text-slate-300 block mb-1">Официална техническа документация:</span>
+          <a
+            href="https://www.bosch-mobility.com/en/solutions/diagnostics/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Посети официалния международен портал на Bosch Mobility за диагностични решения и автоелектроника"
+            class="text-xs text-brand-400 hover:text-brand-300 font-medium inline-flex items-center gap-1.5 transition-colors"
+          >
+            <span>Bosch Mobility Diagnostics Portal</span>
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar: Legal & Copyright -->
+    <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>
+        &copy; {currentYear} <span class="text-slate-300 font-medium">AutoElektronik</span>. Всички права запазени. Лабораторен сервиз за автоелектроника.
+      </p>
+      
+      <!-- Legal Links per Requirement #22 -->
+      <ul class="flex flex-wrap items-center gap-6">
+        {legalLinks.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              title={item.title}
+              class="hover:text-slate-200 transition-colors underline-offset-4 hover:underline"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</footer>

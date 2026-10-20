@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Начало', href: '/', title: 'Отиди към началната страница' },
+  { label: 'Услуги', href: '/uslugi/', title: 'Към каталога с всички услуги' },
+  { label: 'Компютърна автодиагностика' },
+];
+
+const keywords = [
+  'компютърна автодиагностика София',
+  'диагностика с осцилоскоп',
+  'проверка на CAN-Bus мрежа',
+  'четене на грешки OBD2 София',
+  'живи данни сензори диагностика',
+];
+---
+
+<BaseLayout
+  title="Компютърна Автодиагностика и Осцилоскопен Анализ | AutoElektronik"
+  description="Дълбока компютърна автодиагностика с цифров осцилоскоп в София. Откриване на трудни електронни повреди, проверка на CAN-Bus шини и анализ на сензори в реално време."
+  keywords={keywords}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Hero Section -->
+  <section class="py-12 lg:py-16 bg-gradient-to-b from-brand-50/70 to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+            Дълбочинен електронен анализ
+          </span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Компютърна автодиагностика и осцилоскопен анализ
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Повечето сервизи се ограничават само до „четене и триене на грешки“ с универсален скенер. Ние използваме <strong>4-канални цифрови осцилоскопи</strong> и специализирани софтуерни интерфейси, за да видим реалната форма на електрическите импулси и да открием първопричината за повредата.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a
+              href="/otkrii-problema/"
+              title="Стартирай интерактивния диагностичен съветник"
+              class="px-6 py-3 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm transition-all shadow"
+            >
+              Провери симптом онлайн
+            </a>
+            <a
+              href="/kontakti/"
+              title="Запази час за автодиагностика в София"
+              class="px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-semibold text-sm transition-all"
+            >
+              Запази час за диагностика
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-800 bg-slate-900">
+            <img
+              src="/images/service-diag.svg"
+              width="800"
+              height="500"
+              alt="Осцилоскопна форма на сигнала при диагностика на CAN-Bus автомобилна шина"
+              class="w-full h-auto object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- In-depth Author Content Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Section 1: Difference Between Error Reading and True Diagnostics -->
+      <article class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+          Каква е разликата между обикновено „четене на грешки“ и професионална автодиагностика?
+        </h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+          Когато диагностичният уред запише грешка например „P0300 — Случайно прекъсване на запалването“, това не означава непременно, че трябва да се купува нова свещ или бобина. Причината може да бъде спад в напрежението, разтегната ангренажна верига, запушен инжектор, пукнатина в кабелен сноп или дефектирало крайно стъпало в ECU.
+        </p>
+        
+        <!-- Unordered List per Requirement #13 -->
+        <ul class="space-y-3 pt-2">
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Анализ на физическия сигнал с осцилоскоп:</strong>
+              <span class="text-slate-600"> Закачаме сондата директно към пина на сензора. Виждаме шумове, спадове на масата (ground bounce) и пикове в напрежението, които компютърът на колата не успява да отчете като грешка.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Диагностика на високоскоростната CAN мрежа:</strong>
+              <span class="text-slate-600"> Измерваме диференциалното напрежение между CAN-High (2.5V – 3.5V) и CAN-Low (1.5V – 2.5V). Откриваме прекъснати терминални резистори (120 Ohm) и паразитни шумове от дефектирали алтернатори.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Анализ на реални живи данни (Live Data logging):</strong>
+              <span class="text-slate-600"> Записваме параметрите на двигателя под реално натоварване при шофиране — налягане на турбокомпресора, корекция на дюзи, дебит на въздух и температура на изгорелите газове (EGT).</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Section 2: Equipment Used -->
+      <article class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">
+          С какво сервизно оборудване разполагаме?
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          <div class="p-4 bg-white rounded-xl border border-slate-200">
+            <span class="font-bold text-brand-700 block">PicoScope Automotive 4-Channel</span>
+            <span class="text-slate-600 text-xs block mt-1">Златният стандарт в света за автомобилна осцилоскопия с честотна лента до 20 MHz и високоскоростно семплиране.</span>
+          </div>
+          <div class="p-4 bg-white rounded-xl border border-slate-200">
+            <span class="font-bold text-brand-700 block">Дилърски софтуерни интерфейси</span>
+            <span class="text-slate-600 text-xs block mt-1">VCDS / ODIS (VAG), ISTA / Rheingold (BMW), Xentry PassThru (Mercedes-Benz), Clip (Renault), DiagBox (PSA).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Internal Cross-Links (Req #17) -->
+      <div class="pt-6 border-t border-slate-200 flex flex-wrap gap-4 items-center justify-between">
+        <div class="text-xs text-slate-500">
+          Свързани услуги:
+          <a href="/uslugi/remont-na-abs-modul/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за ремонт на ABS модули">Ремонт на ABS модул</a> |
+          <a href="/uslugi/remont-na-ecu-kompyutar/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за ремонт на ECU">Ремонт на ECU компютър</a>
+        </div>
+        <a
+          href="/otkrii-problema/"
+          title="Стартирай диагностичния въпросник"
+          class="text-xs font-bold text-brand-700 hover:text-brand-900 underline"
+        >
+          Диагностичен въпросник &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

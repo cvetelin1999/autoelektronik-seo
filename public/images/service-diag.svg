@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgDiag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#bgDiag)"/>
+  <!-- Oscilloscope Screen Frame -->
+  <rect x="180" y="70" width="440" height="300" rx="16" fill="#042F2E" stroke="#0D9488" stroke-width="4"/>
+  <!-- Grid Lines inside Scope -->
+  <g stroke="#115E59" stroke-width="1" stroke-dasharray="2 4">
+    <line x1="180" y1="130" x2="620" y2="130"/>
+    <line x1="180" y1="190" x2="620" y2="190"/>
+    <line x1="180" y1="250" x2="620" y2="250"/>
+    <line x1="180" y1="310" x2="620" y2="310"/>
+    <line x1="250" y1="70" x2="250" y2="370"/>
+    <line x1="330" y1="70" x2="330" y2="370"/>
+    <line x1="410" y1="70" x2="410" y2="370"/>
+    <line x1="490" y1="70" x2="490" y2="370"/>
+    <line x1="570" y1="70" x2="570" y2="370"/>
+  </g>
+  <!-- CAN-Bus High Waveform (Yellow) -->
+  <path d="M190 190 L230 190 L235 150 L275 150 L280 190 L320 190 L325 150 L365 150 L370 190 L420 190 L425 150 L465 150 L470 190 L520 190 L525 150 L565 150 L570 190 L610 190" fill="none" stroke="#FCD34D" stroke-width="3" stroke-linecap="round"/>
+  <!-- CAN-Bus Low Waveform (Teal) -->
+  <path d="M190 250 L230 250 L235 290 L275 290 L280 250 L320 250 L325 290 L365 290 L370 250 L420 250 L425 290 L465 290 L470 250 L520 250 L525 290 L565 290 L570 250 L610 250" fill="none" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round"/>
+  <!-- Protocol Labels -->
+  <rect x="200" y="85" width="130" height="24" rx="4" fill="#0F172A"/>
+  <text x="265" y="101" fill="#FCD34D" font-family="monospace" font-size="11" text-anchor="middle">CH1: CAN_H 2.5V-3.5V</text>
+  <rect x="350" y="85" width="130" height="24" rx="4" fill="#0F172A"/>
+  <text x="415" y="101" fill="#2DD4BF" font-family="monospace" font-size="11" text-anchor="middle">CH2: CAN_L 1.5V-2.5V</text>
+  <!-- Diagnostic Banner -->
+  <rect x="230" y="420" width="340" height="40" rx="20" fill="#0F766E"/>
+  <text x="400" y="445" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">КОМПЮТЪРНА АВТОДИАГНОСТИКА</text>
+</svg>

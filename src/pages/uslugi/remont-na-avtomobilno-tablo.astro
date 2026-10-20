@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Начало', href: '/', title: 'Отиди към началната страница' },
+  { label: 'Услуги', href: '/uslugi/', title: 'Към каталога с всички услуги' },
+  { label: 'Ремонт на автомобилно табло' },
+];
+
+const keywords = [
+  'ремонт на автомобилно табло',
+  'смяна на дисплей табло пиксели',
+  'ремонт на стрелки километраж',
+  'ремонт на табла Jaeger Marelli',
+  'проблем с табло Audi BMW Mercedes',
+];
+---
+
+<BaseLayout
+  title="Ремонт на Автомобилни Табла и Дисплеи (Пиксели) | AutoElektronik"
+  description="Професионален ремонт на километражни табла, смяна на лентови кабели и LCD дисплеи, възстановяване на износени стъпкови моторчета за стрелки в София."
+  keywords={keywords}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Hero Section -->
+  <section class="py-12 lg:py-16 bg-gradient-to-b from-brand-50/70 to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+            Възстановяване на арматурни табла
+          </span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Ремонт на автомобилни табла, дисплеи и стрелкови уреди
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Проблемите с арматурното табло (<strong>Instrument Cluster</strong>) водят не само до дискомфорт при шофиране, но и до невъзможност за преминаване на годишен технически преглед (ГТП). Ние подменяме изгорели матрици, рециклираме стъпкови моторчета и отстраняваме софтуерни бъгове в процесорите на таблото.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a
+              href="/otkrii-problema/"
+              title="Стартирай бързия диагностичен въпросник за автомобилно табло"
+              class="px-6 py-3 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm transition-all shadow"
+            >
+              Провери симптом на табло
+            </a>
+            <a
+              href="/kontakti/"
+              title="Свържи се с нас за цена и срок за ремонт на табло"
+              class="px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-semibold text-sm transition-all"
+            >
+              Запитване за ремонт
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-800 bg-slate-900">
+            <img
+              src="/images/service-tablo.svg"
+              width="800"
+              height="500"
+              alt="Ремонт и калибриране на скоростомер и LCD дисплей на автомобилно табло"
+              class="w-full h-auto object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- In-depth Author Content Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Section 1: Most Common Cluster Defects -->
+      <article class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+          Най-често срещани дефекти при автомобилните табла
+        </h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+          Арматурното табло е главният комуникационен възел между водача и автомобилните модули. Често дефектите в таблото прекъсват и имобилайзера (Immo), в резултат на което колата пали и гасне след 2 секунди.
+        </p>
+
+        <!-- Unordered List per Requirement #13 -->
+        <ul class="space-y-3 pt-2">
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Загуба на пиксели и затъмнен LCD дисплей:</strong>
+              <span class="text-slate-600"> Типичен проблем при BMW (E38, E39, X5 E53), Audi (A3, A4, A6, TT) и Mercedes (W210, W208). При висока температура символите на дисплея изчезват или се размазват поради отлепване на заводския лентов кабел.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Отказ на стрелките (километраж, оборотомер, гориво, температура):</strong>
+              <span class="text-slate-600"> Стрелките замръзват в произволна позиция, подскачат или отчитат грешни стойности. Причината е механично износване на зъбните колела в стъпковите моторчета (типично за табла Magneti Marelli и Jaeger).</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Пълно угасване на таблото (Blackout):</strong>
+              <span class="text-slate-600"> Популярно явление при Renault Scenic II, Espace IV и Ford Focus II. Прегряват ключовите MOSFET транзистори в захранващия преобразувател на платката или дефектират студените спойки около процесора.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">✓</span>
+            <div class="text-sm">
+              <strong class="text-slate-900">Отказ на звуковата сигнализация (зумер):</strong>
+              <span class="text-slate-600"> Няма звук при включен мигач, забравен колан, включени светлини или отворена врата. Подменя се заводският високоговорител със съвместим микрозумер.</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Section 2: Laboratory Repair Techniques -->
+      <article class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900">
+          Как възстановяваме таблата в нашата лаборатория?
+        </h2>
+        <p class="text-sm text-slate-700 leading-relaxed">
+          Вместо временни „закърпвания“ с притискане на гумени ленти (което работи максимум 1-2 месеца), ние извършваме <strong>термично запояване на чисто нови дисплеи и кабели</strong> със специална T-образна поялна глава и тефлонов изолатор.
+        </p>
+        <p class="text-sm text-slate-700 leading-relaxed">
+          След монтажа всяко табло се закача на специализиран тестер, генериращ CAN-bus сигнали за скорост и обороти, за да се гарантира точното фабрично позициониране и калибрация на стрелките на 0 км/ч.
+        </p>
+      </article>
+
+      <!-- Internal Cross-Links (Req #17) -->
+      <div class="pt-6 border-t border-slate-200 flex flex-wrap gap-4 items-center justify-between">
+        <div class="text-xs text-slate-500">
+          Свързани услуги:
+          <a href="/uslugi/remont-na-abs-modul/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за ремонт на ABS модули">Ремонт на ABS модул</a> |
+          <a href="/uslugi/avtodiagnostika/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за автодиагностика">Автодиагностика</a>
+        </div>
+        <a
+          href="/otkrii-problema/"
+          title="Направи теста за повреда по автомобилното табло"
+          class="text-xs font-bold text-brand-700 hover:text-brand-900 underline"
+        >
+          Диагностичен въпросник &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
