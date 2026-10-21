@@ -15,12 +15,16 @@ def create_package():
     os.makedirs(os.path.join(temp_dir, 'Prezentacii'), exist_ok=True)
     os.makedirs(os.path.join(temp_dir, 'Uebsait_HTML'), exist_ok=True)
     
-    # Copy Docs
-    for f in os.listdir('docs'):
-        if f.endswith('.md'):
-            shutil.copy(os.path.join('docs', f), os.path.join(temp_dir, 'Dokumentaciq', f))
-        elif f.endswith('.pptx'):
-            shutil.copy(os.path.join('docs', f), os.path.join(temp_dir, 'Prezentacii', f))
+    # Copy Docs & Screenshots
+    for item in os.listdir('docs'):
+        s = os.path.join('docs', item)
+        d = os.path.join(temp_dir, 'Dokumentaciq', item)
+        if os.path.isdir(s):
+            shutil.copytree(s, d)
+        elif item.endswith('.md'):
+            shutil.copy2(s, d)
+        elif item.endswith('.pptx'):
+            shutil.copy2(s, os.path.join(temp_dir, 'Prezentacii', item))
             
     # Copy Website HTML (dist)
     for item in os.listdir('dist'):
