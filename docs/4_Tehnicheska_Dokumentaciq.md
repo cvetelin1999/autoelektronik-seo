@@ -45,7 +45,6 @@
 
 Сайтът е успешно верифициран и интегриран в Google Search Console (Изискване №18):
 - **Собственост (Ownership):** Напълно потвърдена чрез HTML файл (`google20c5756f3387ca66.html`) и meta verification таг (`google-site-verification`).
-- **Скрийншот за верификация:** `docs/screenshots/google-search-console-verified.png`
 - **Подадени карти на сайта:**
   1. `sitemap.xml` — **Success** (обходени и индексирани 11 страници).
   2. `video-sitemap.xml` — **Success** (отчетено 1 видео с пълни метаданни и транскрипция).
