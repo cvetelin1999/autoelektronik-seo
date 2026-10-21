@@ -6,7 +6,7 @@ export default defineConfig({
   site: 'https://autoelektronik-service.bg',
   integrations: [
     tailwind({
-      applyBaseStyles: true,
+      applyBaseStyles: false,
     }),
   ],
   build: {
