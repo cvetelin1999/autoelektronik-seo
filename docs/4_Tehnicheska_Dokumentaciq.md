@@ -1,7 +1,9 @@
 # Техническа документация и резултати от тестове (CSCB700)
 
 **Дисциплина:** Оптимизация за търсачки в уеб (CSCB700)  
-**Проект:** AutoElektronik (`https://autoelektronik-service.bg`)  
+**Преподавател:** гл. ас. д-р Елисавета Тричкова-Кашъмова  
+**Проект:** AutoElektronik (`https://autoelektronik-seo.tsvetelin-takiev.workers.dev/`)  
+**GitHub Репозиторий:** `https://github.com/cvetelin1999/autoelektronik-seo.git`  
 **Дата на тестване:** Октомври 2026 г.  
 
 ---
@@ -12,6 +14,7 @@
 - **CSS рамка:** Tailwind CSS v3.4 (самостоятелно компилиран и минифициран CSS файл от едва 31 KB)
 - **Изходен формат:** 100% чист HTML5 без сложни клиентски JavaScript библиотеки
 - **Време за компилация (Build time):** под 6 секунди за всички 11 страници
+- **Хостинг и CDN инфраструктура:** Cloudflare Workers / Cloudflare Edge Network с активиран HTTP/3 и SSL
 
 ---
 
@@ -38,7 +41,20 @@
 
 ---
 
-## 3. Валидация по международните стандарти на W3C
+## 3. Google Search Console верификация и карти на сайта (Sitemaps)
+
+Сайтът е успешно верифициран и интегриран в Google Search Console (Изискване №18):
+- **Собственост (Ownership):** Напълно потвърдена чрез HTML файл (`google20c5756f3387ca66.html`) и meta verification таг (`google-site-verification`).
+- **Скрийншот за верификация:** `docs/screenshots/google-search-console-verified.png`
+- **Подадени карти на сайта:**
+  1. `sitemap.xml` — **Success** (обходени и индексирани 11 страници).
+  2. `video-sitemap.xml` — **Success** (отчетено 1 видео с пълни метаданни и транскрипция).
+  3. `image-sitemap.xml` — подаден и описан в `robots.txt` (9 изображения с пълни описания).
+- **Скрийншот от Google Search Console Sitemaps:** `docs/screenshots/google-search-console-sitemaps.png`
+
+---
+
+## 4. Валидация по международните стандарти на W3C
 
 Извършена е проверка на всички 11 компилирани HTML страници чрез W3C Markup Validation Service:
 - **Общ брой проверени страници:** 11
@@ -48,7 +64,7 @@
 
 ---
 
-## 4. Протокол от вътрешния автоматизиран одит
+## 5. Протокол от вътрешния автоматизиран одит
 
 Скриптът за одит (`npm run audit`) проверява автоматично следните параметри:
 
@@ -71,10 +87,10 @@
 
 ---
 
-## 5. Входящи и изходящи връзки
+## 6. Входящи и изходящи връзки
 
 - **Изходящи авторитетни връзки (Изискване №15):**
   - Препратка към [Bosch Mobility Solutions](https://www.bosch-mobility.com) (за стандарти в ABS/ESP системите).
   - Препратка към [ISO 14229 UDS](https://www.iso.org) (за диагностични протоколи).
 - **Входяща връзка (Изискване №16):**
-  - Линк към официалното публично хранилище на проекта в GitHub: `https://github.com/autoelektronik-service/autoelektronik-seo`.
+  - Линк към официалното публично хранилище на проекта в GitHub: `https://github.com/cvetelin1999/autoelektronik-seo.git`.
