@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#certBg)"/>
+  <!-- Certificate Border -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="none" stroke="#0F766E" stroke-width="4"/>
+  <rect x="65" y="55" width="670" height="390" rx="8" fill="none" stroke="#2DD4BF" stroke-width="1" stroke-dasharray="6 6"/>
+  <!-- Gold Seal -->
+  <circle cx="400" cy="140" r="45" fill="#F59E0B" stroke="#FDE68A" stroke-width="3"/>
+  <polygon points="400,105 410,130 435,130 415,145 425,170 400,155 375,170 385,145 365,130 390,130" fill="#FFFFFF"/>
+  <!-- Text -->
+  <text x="400" y="230" fill="#FFFFFF" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">СЕРТИФИЦИРАНА ЛАБОРАТОРИЯ ЗА РЕМОНТ</text>
+  <text x="400" y="270" fill="#2DD4BF" font-family="sans-serif" font-size="16" font-weight="medium" text-anchor="middle">Стандарт IPC-7711/7721 за преработка и ремонт на електронни модули</text>
+  <text x="400" y="320" fill="#94A3B8" font-family="sans-serif" font-size="14" text-anchor="middle">12 МЕСЕЦА ПЪЛНА ПИСМЕНА ГАРАНЦИЯ ЗА ВСИЧКИ ИЗВЪРШЕНИ РЕМОНТИ</text>
+  <text x="400" y="360" fill="#CBD5E1" font-family="sans-serif" font-size="12" text-anchor="middle">Тестване на симулационен стенд под реално натоварване преди издаване</text>
+  <!-- Badges footer -->
+  <rect x="250" y="395" width="300" height="34" rx="17" fill="#0F766E"/>
+  <text x="400" y="417" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">100% ГАРАНЦИЯ ЗА КАЧЕСТВО</text>
+</svg>

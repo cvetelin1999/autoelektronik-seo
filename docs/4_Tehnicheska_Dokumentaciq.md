@@ -50,7 +50,6 @@
   1. `sitemap.xml` — **Success** (обходени и индексирани 11 страници).
   2. `video-sitemap.xml` — **Success** (отчетено 1 видео с пълни метаданни и транскрипция).
   3. `image-sitemap.xml` — подаден и описан в `robots.txt` (9 изображения с пълни описания).
-- **Скрийншот от Google Search Console Sitemaps:** `docs/screenshots/google-search-console-sitemaps.png`
 
 ---
 

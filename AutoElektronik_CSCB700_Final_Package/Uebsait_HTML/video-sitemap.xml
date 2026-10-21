@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://autoelektronik-seo.tsvetelin-takiev.workers.dev/uslugi/remont-na-abs-modul/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://autoelektronik-seo.tsvetelin-takiev.workers.dev/images/video-repair-thumbnail.svg</video:thumbnail_loc>
+      <video:title><![CDATA[Как се ремонтира и рециклира дефектирал ABS / ESP модул]]></video:title>
+      <video:description><![CDATA[Лабораторна видео демонстрация: процес по отваряне, преглед под микроскоп и микрозапояване на прекъснати бондинг проводници при автомобилен ABS модул ATE MK60.]]></video:description>
+      <video:content_loc>https://autoelektronik-seo.tsvetelin-takiev.workers.dev/videos/abs-module-repair-lab.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/zmkAuDSU1Zo</video:player_loc>
+      <video:duration>275</video:duration>
+      <video:publication_date>2026-10-20T10:00:00+02:00</video:publication_date>
+      <video:tag><![CDATA[ремонт на ABS]]></video:tag>
+      <video:tag><![CDATA[автоелектроника]]></video:tag>
+      <video:tag><![CDATA[ATE MK60]]></video:tag>
+      <video:tag><![CDATA[микрозапояване]]></video:tag>
+      <video:tag><![CDATA[диагностика]]></video:tag>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+</urlset>

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# XML Sitemaps per University Requirement #5
+Sitemap: https://autoelektronik-seo.tsvetelin-takiev.workers.dev/sitemap.xml
+Sitemap: https://autoelektronik-seo.tsvetelin-takiev.workers.dev/image-sitemap.xml
+Sitemap: https://autoelektronik-seo.tsvetelin-takiev.workers.dev/video-sitemap.xml
+Sitemap: https://autoelektronik-service.bg/sitemap.xml
+Sitemap: https://autoelektronik-service.bg/image-sitemap.xml
+Sitemap: https://autoelektronik-service.bg/video-sitemap.xml
