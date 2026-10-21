@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://autoelektronik-service.bg',
+  site: 'https://autoelektronik-seo.tsvetelin-takiev.workers.dev',
   integrations: [
     tailwind({
       applyBaseStyles: false,
