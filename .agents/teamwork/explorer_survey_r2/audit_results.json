@@ -1,0 +1,298 @@
+[
+  {
+    "page": "index.html",
+    "title": "AutoElektronik — Специализиран ремонт на автомобилна електроника в София | AutoElektronik",
+    "description": "Специализиран лабораторен сервиз за ремонт на ABS модули, ECU двигателни компютри и автомобилни табла. 12 месеца гаранция, оригинални части и бърза диагностика.",
+    "canonical": "https://autoelektronik-service.bg/",
+    "links_count": 32,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 5,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Професионаленремонт на автомобилна електроника",
+    "h2_count": 4,
+    "h3_count": 11,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair"
+    ],
+    "has_breadcrumbs": false,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "kontakti/index.html",
+    "title": "Контакти и Локация — Сервиз AutoElektronik в София | AutoElektronik",
+    "description": "Свържи се с лабораторен сервиз AutoElektronik в София. Адрес: бул. Цариградско шосе №115, телефон: +359 88 812 3456. Google карта с точен пин и форма за запитване.",
+    "canonical": "https://autoelektronik-service.bg/kontakti/",
+    "links_count": 28,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 0,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Контакти и сервизна локация в София",
+    "h2_count": 4,
+    "h3_count": 3,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "otkrii-problema/index.html",
+    "title": "Открий проблема — Интерактивен диагностичен съветник | AutoElektronik",
+    "description": "Интерактивен софтуерен въпросник за бърза ориентировъчна диагностика на автомобилна електроника. Разпознай повредата в ABS, ECU или таблото за 60 секунди.",
+    "canonical": "https://autoelektronik-service.bg/otkrii-problema/",
+    "links_count": 27,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 0,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Открий проблема в автомобилната електроника",
+    "h2_count": 5,
+    "h3_count": 4,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "usloviya-za-polzvane/index.html",
+    "title": "Условия за ползване на уебсайта и сервизните услуги — AutoElektronik | AutoElektronik",
+    "description": "Официални общи условия за ползване на уебсайта и условия за гаранция при извършване на лабораторни ремонти на автомобилна електроника в AutoElektronik.",
+    "canonical": "https://autoelektronik-service.bg/usloviya-za-polzvane/",
+    "links_count": 26,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 0,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Общи условия за ползване на уебсайта и сервизните услуги",
+    "h2_count": 5,
+    "h3_count": 3,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "uslugi/avtodiagnostika/index.html",
+    "title": "Компютърна Автодиагностика и Осцилоскопен Анализ | AutoElektronik | AutoElektronik",
+    "description": "Дълбока компютърна автодиагностика с цифров осцилоскоп в София. Откриване на трудни електронни повреди, проверка на CAN-Bus шини и анализ на сензори в реално време.",
+    "canonical": "https://autoelektronik-service.bg/uslugi/avtodiagnostika/",
+    "links_count": 32,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 1,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Компютърна автодиагностика и осцилоскопен анализ",
+    "h2_count": 3,
+    "h3_count": 3,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "uslugi/index.html",
+    "title": "Услуги по ремонт на автомобилна електроника — AutoElektronik | AutoElektronik",
+    "description": "Пълен каталог със специализирани услуги за автоелектроника: ремонт на ABS помпи, ECU двигателни компютри, километражни табла и осцилоскопна автодиагностика.",
+    "canonical": "https://autoelektronik-service.bg/uslugi/",
+    "links_count": 34,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 4,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Услуги по ремонт на автомобилна електроника",
+    "h2_count": 5,
+    "h3_count": 3,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "uslugi/remont-na-abs-modul/index.html",
+    "title": "Ремонт на ABS модул и помпа — 12 Месеца Гаранция | AutoElektronik | AutoElektronik",
+    "description": "Специализиран лабораторен ремонт и рециклиране на електронни ABS/ESP модули и помпи. Прецизно възстановяване на микробондинг проводници за ATE MK60, Bosch 8.0 и TRW.",
+    "canonical": "https://autoelektronik-service.bg/uslugi/remont-na-abs-modul/",
+    "links_count": 32,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 2,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Ремонт на ABS модул и хидравлична помпа",
+    "h2_count": 4,
+    "h3_count": 4,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "uslugi/remont-na-avtomobilno-tablo/index.html",
+    "title": "Ремонт на Автомобилни Табла и Дисплеи (Пиксели) | AutoElektronik | AutoElektronik",
+    "description": "Професионален ремонт на километражни табла, смяна на лентови кабели и LCD дисплеи, възстановяване на износени стъпкови моторчета за стрелки в София.",
+    "canonical": "https://autoelektronik-service.bg/uslugi/remont-na-avtomobilno-tablo/",
+    "links_count": 32,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 1,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Ремонт на автомобилни табла, дисплеи и стрелкови уреди",
+    "h2_count": 3,
+    "h3_count": 3,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "uslugi/remont-na-ecu-kompyutar/index.html",
+    "title": "Ремонт на ECU Двигателен Компютър и Клониране | AutoElektronik | AutoElektronik",
+    "description": "Професионален ремонт и клониране на двигателни компютри (ECU / ECM). Подмяна на крайни стъпала, възстановяване след късо съединение и 12 месеца гаранция.",
+    "canonical": "https://autoelektronik-service.bg/uslugi/remont-na-ecu-kompyutar/",
+    "links_count": 32,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 1,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Ремонт на ECU компютър и клониране на модули",
+    "h2_count": 4,
+    "h3_count": 7,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "za-nas/index.html",
+    "title": "За нас — Сервиз и Лаборатория за Автоелектроника | AutoElektronik | AutoElektronik",
+    "description": "Научи повече за AutoElektronik — лабораторен сервизен център в София, специализиран в рециклиране и ремонт на автомобилни електронни блокове с 12 месеца гаранция.",
+    "canonical": "https://autoelektronik-service.bg/za-nas/",
+    "links_count": 30,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 2,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "За сервиз и лаборатория AutoElektronik",
+    "h2_count": 4,
+    "h3_count": 6,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  },
+  {
+    "page": "zashtita-na-dannite/index.html",
+    "title": "Политика за Защита на Личните Данни (GDPR) — AutoElektronik | AutoElektronik",
+    "description": "Политика за поверителност и защита на личните данни съгласно Регламент (ЕС) 2016/679 (GDPR) на специализиран сервиз за автоелектроника AutoElektronik.",
+    "canonical": "https://autoelektronik-service.bg/zashtita-na-dannite/",
+    "links_count": 26,
+    "links_missing_title": 0,
+    "missing_title_details": [],
+    "imgs_count": 0,
+    "imgs_missing_alt": 0,
+    "imgs_missing_width": 0,
+    "imgs_missing_height": 0,
+    "h1_count": 1,
+    "h1": "Политика за поверителност и защита на личните данни",
+    "h2_count": 5,
+    "h3_count": 3,
+    "has_og": true,
+    "json_ld_types": [
+      "AutoRepair",
+      "BreadcrumbList"
+    ],
+    "has_breadcrumbs": true,
+    "ext_links_count": 1,
+    "ext_links": [
+      "https://www.bosch-mobility.com/en/solutions/diagnostics/"
+    ]
+  }
+]

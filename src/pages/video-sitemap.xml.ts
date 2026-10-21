@@ -33,8 +33,8 @@ ${videoEntries
       <video:player_loc allow_embed="yes">${v.playerLoc}</video:player_loc>
       <video:duration>${v.duration}</video:duration>
       <video:publication_date>${v.publicationDate}</video:publication_date>
-      <video:family_friendly>${v.familyFriendly}</video:family_friendly>
       ${v.tag.map((t) => `<video:tag><![CDATA[${t}]]></video:tag>`).join('\n      ')}
+      <video:family_friendly>${v.familyFriendly}</video:family_friendly>
     </video:video>
   </url>`
   )

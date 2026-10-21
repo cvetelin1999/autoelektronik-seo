@@ -17,7 +17,7 @@ const keywords = [
 ---
 
 <BaseLayout
-  title="Открий проблема — Интерактивен диагностичен съветник"
+  title="Открий проблема (Диагностика) | AutoElektronik"
   description="Интерактивен софтуерен въпросник за бърза ориентировъчна диагностика на автомобилна електроника. Разпознай повредата в ABS, ECU или таблото за 60 секунди."
   keywords={keywords}
 >
@@ -41,12 +41,29 @@ const keywords = [
     </div>
   </section>
 
+  <!-- Diagnostic Flowchart Diagram (Requirement #11, #12 & Image Sitemap Parity) -->
+  <section class="py-6 bg-white border-b border-slate-200/60">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm p-4 sm:p-6 text-center">
+        <h2 class="text-sm font-bold uppercase tracking-wider text-slate-700 mb-3">Блок-схема на диагностичния алгоритъм</h2>
+        <img
+          src="/images/diagnostic-flow.svg"
+          width="800"
+          height="500"
+          alt="Интерактивна блок-схема на диагностичния въпросник за автомобилна електроника"
+          class="w-full h-auto object-contain rounded-xl mx-auto"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
   <!-- Interactive Wizard Container (Vanilla JS) -->
   <section class="py-12 lg:py-16 bg-slate-50">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Stepper Progress Bar -->
-      <div class="mb-8" aria-label="Прогрес на въпросника">
+      <div class="mb-8" role="region" aria-label="Прогрес на въпросника">
         <div class="flex items-center justify-between mb-2">
           <span id="step-counter" class="text-xs font-bold uppercase tracking-wider text-brand-700">Стъпка 1 от 3</span>
           <span id="step-title" class="text-xs font-medium text-slate-500">Избор на основен симптом</span>
@@ -71,15 +88,15 @@ const keywords = [
               data-category="abs"
               title="Избери при проблеми със спирачната система, светещи ABS/ESP лампи или твърд педал"
             >
-              <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <span class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
-              </div>
-              <div>
+              </span>
+              <span class="block">
                 <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Светят лампи ABS / ESP / Тракшън</span>
                 <span class="text-xs text-slate-500 mt-1 block">Прекъсваща спирачна помпа, блокирало колело, липса на скоростомер.</span>
-              </div>
+              </span>
             </button>
 
             <button
@@ -88,15 +105,15 @@ const keywords = [
               data-category="ecu"
               title="Избери при незапалващ двигател, прекъсване на цилиндри или липса на връзка с ECU"
             >
-              <div class="w-10 h-10 rounded-lg bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <span class="w-10 h-10 rounded-lg bg-red-100 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
-              </div>
-              <div>
+              </span>
+              <span class="block">
                 <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Двигателят не пали / ECU грешка</span>
                 <span class="text-xs text-slate-500 mt-1 block">Липса на искра, дюзите не отварят, авариен режим (Limp mode).</span>
-              </div>
+              </span>
             </button>
 
             <button
@@ -105,15 +122,15 @@ const keywords = [
               data-category="tablo"
               title="Избери при изгаснал километраж, изгорели пиксели или неработещи стрелки"
             >
-              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <span class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
-              </div>
-              <div>
+              </span>
+              <span class="block">
                 <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Проблем с табло / дисплей</span>
                 <span class="text-xs text-slate-500 mt-1 block">Изгаснали стрелки, размазани пиксели на бордовия компютър, изгасващо осветление.</span>
-              </div>
+              </span>
             </button>
 
             <button
@@ -122,15 +139,15 @@ const keywords = [
               data-category="can"
               title="Избери при пълна липса на комуникация или произволни грешки по цялата кола"
             >
-              <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <span class="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
                 </svg>
-              </div>
-              <div>
+              </span>
+              <span class="block">
                 <span class="block font-semibold text-slate-900 group-hover:text-brand-700">Липса на комуникация (CAN-Bus)</span>
                 <span class="text-xs text-slate-500 mt-1 block">Диагностичният уред не се свързва с модулите, светят множество системи едновременно.</span>
-              </div>
+              </span>
             </button>
           </div>
         </div>
@@ -174,16 +191,16 @@ const keywords = [
           <p class="text-sm text-slate-500 mb-6">Как се проявява проблемът във времето?</p>
           
           <div class="space-y-3 mb-6">
-            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
-              <input type="radio" name="timing" value="permanent" class="w-4 h-4 text-brand-700 focus:ring-brand-500" checked />
+            <label for="timing-permanent" class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+              <input type="radio" id="timing-permanent" name="timing" value="permanent" class="w-4 h-4 text-brand-700 focus:ring-brand-500" checked />
               <span class="text-sm font-medium text-slate-800">Постоянно свети / проблемът е непрекъснат</span>
             </label>
-            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
-              <input type="radio" name="timing" value="intermittent" class="w-4 h-4 text-brand-700 focus:ring-brand-500" />
+            <label for="timing-intermittent" class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+              <input type="radio" id="timing-intermittent" name="timing" value="intermittent" class="w-4 h-4 text-brand-700 focus:ring-brand-500" />
               <span class="text-sm font-medium text-slate-800">Прекъсващ проблем (появява се при загрял мотор или друсване)</span>
             </label>
-            <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
-              <input type="radio" name="timing" value="rain" class="w-4 h-4 text-brand-700 focus:ring-brand-500" />
+            <label for="timing-rain" class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+              <input type="radio" id="timing-rain" name="timing" value="rain" class="w-4 h-4 text-brand-700 focus:ring-brand-500" />
               <span class="text-sm font-medium text-slate-800">Проявява се след автомивка или дъждовно време (възможна влага/окисление)</span>
             </label>
           </div>
@@ -196,9 +213,9 @@ const keywords = [
               type="text"
               id="error-code-input"
               placeholder="напр. 01276, 5DF0, P0606, DF017, C1380..."
-              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600 bg-white"
             />
-            <span class="text-xs text-slate-400 mt-1 block">Ако сте закачали диагностичен тестер, въведете записания код на грешката.</span>
+            <span class="text-xs text-slate-500 mt-1 block">Ако сте закачали диагностичен тестер, въведете записания код на грешката.</span>
           </div>
 
           <div class="flex justify-between items-center pt-4 border-t border-slate-100">
@@ -224,6 +241,21 @@ const keywords = [
           </div>
         </div>
 
+        <!-- INTERMEDIATE STEP: 600ms Animated Diagnostic Scanner Transition -->
+        <div id="step-loading" class="wizard-step hidden py-8 text-center" role="status" aria-live="polite">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-100 text-brand-700 mb-4 animate-pulse">
+            <svg class="w-8 h-8 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-1">Лабораторен анализ на симптомите...</h3>
+          <p class="text-sm text-slate-500 mb-6">Сравняване на параметрите с базата данни за дефекти на електронни модули</p>
+          <div class="w-full max-w-md mx-auto h-2.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
+            <div id="scanner-progress-bar" class="h-full bg-brand-600 rounded-full transition-all duration-500 ease-out w-0"></div>
+          </div>
+        </div>
+
         <!-- STEP 4: DIAGNOSTIC RESULT SCREEN -->
         <div id="step-result" class="wizard-step hidden">
           <div class="text-center mb-6">
@@ -241,14 +273,39 @@ const keywords = [
               <span class="text-slate-500">Автомобил:</span>
               <span id="result-brand" class="font-semibold text-slate-900">VAG</span>
             </div>
-            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
-              <span class="text-slate-500">Вероятна причина:</span>
-              <span id="result-cause" class="font-semibold text-slate-900">Прекъснати алуминиеви микробондинг нишки към хидравличната помпа</span>
+            <div id="result-code-row" class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80 hidden">
+              <span class="text-slate-500">Разпознат OBD код:</span>
+              <span id="result-code" class="font-bold text-brand-700 bg-brand-50 px-2 py-0.5 rounded border border-brand-200"></span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start text-sm pb-2 border-b border-slate-200/80 gap-1">
+              <span class="text-slate-500 flex-shrink-0">Вероятна причина:</span>
+              <span id="result-cause" class="font-semibold text-slate-900 sm:text-right">Прекъснати алуминиеви микробондинг нишки към хидравличната помпа</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start text-sm pb-2 border-b border-slate-200/80 gap-1">
+              <span class="text-slate-500 flex-shrink-0">Характер на проявление:</span>
+              <span id="result-timing" class="font-medium text-slate-800 sm:text-right">Постоянен отказ</span>
             </div>
             <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
               <span class="text-slate-500">Възможност за лабораторен ремонт:</span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
                 Висока (95% успеваемост)
+              </span>
+            </div>
+            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
+              <span class="text-slate-500">Ориентировъчна цена за ремонт:</span>
+              <span id="result-price" class="font-bold text-slate-900">180 – 320 лв.</span>
+            </div>
+            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
+              <span class="text-slate-500">Срок за изпълнение:</span>
+              <span id="result-time" class="font-semibold text-slate-800">24 – 48 часа</span>
+            </div>
+            <div class="flex justify-between items-center text-sm pb-2 border-b border-slate-200/80">
+              <span class="text-slate-500">Писмена гаранция:</span>
+              <span class="font-bold text-emerald-700 flex items-center gap-1">
+                <svg class="w-4 h-4 text-emerald-600 inline flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                12 месеца пълна гаранция
               </span>
             </div>
             <div class="flex justify-between items-center text-sm">
@@ -278,18 +335,32 @@ const keywords = [
             <h3 class="text-base font-bold text-slate-900 mb-3 text-center">Изпрати запитване за този модул</h3>
             <form id="wizard-lead-form" class="space-y-3">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input
-                  type="text"
-                  required
-                  placeholder="Вашето име"
-                  class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
-                />
-                <input
-                  type="tel"
-                  required
-                  placeholder="Телефонен номер"
-                  class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
-                />
+                <div>
+                  <label for="wizard-lead-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Вашето име *
+                  </label>
+                  <input
+                    type="text"
+                    id="wizard-lead-name"
+                    name="name"
+                    required
+                    placeholder="Иван Иванов"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600 bg-white"
+                  />
+                </div>
+                <div>
+                  <label for="wizard-lead-phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+                    Телефонен номер *
+                  </label>
+                  <input
+                    type="tel"
+                    id="wizard-lead-phone"
+                    name="phone"
+                    required
+                    placeholder="088 812 3456"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-brand-600 focus:ring-1 focus:ring-brand-600 bg-white"
+                  />
+                </div>
               </div>
               <button
                 type="submit"
@@ -319,123 +390,379 @@ const keywords = [
       </div>
 
       <!-- UX Technical Disclaimer Note per academic standards -->
-      <div class="mt-6 text-center text-xs text-slate-400 max-w-lg mx-auto">
+      <div class="mt-6 text-center text-xs text-slate-600 max-w-lg mx-auto">
         * Този онлайн съветник предоставя предварителна статистическа насока на база най-често срещаните дефекти. Окончателна техническа диагностика се извършва на сервизен стенд и осцилоскоп в нашата лаборатория.
       </div>
 
     </div>
   </section>
-</BaseLayout>
 
-<script is:inline>
-  // Diagnostic Wizard State Machine
-  let selectedCategory = 'abs';
-  let selectedBrand = 'VAG (VW / Audi / Seat / Skoda)';
+  <script is:inline>
+    // Diagnostic Wizard State Machine & Dynamic Logic
+    let selectedCategory = 'abs';
+    let selectedBrand = 'VAG (VW / Audi / Seat / Skoda)';
 
-  const step1 = document.getElementById('step-1');
-  const step2 = document.getElementById('step-2');
-  const step3 = document.getElementById('step-3');
-  const stepResult = document.getElementById('step-result');
+    const step1 = document.getElementById('step-1');
+    const step2 = document.getElementById('step-2');
+    const step3 = document.getElementById('step-3');
+    const stepLoading = document.getElementById('step-loading');
+    const stepResult = document.getElementById('step-result');
 
-  const counter = document.getElementById('step-counter');
-  const stepTitle = document.getElementById('step-title');
-  const progressBar = document.getElementById('progress-bar');
+    const counter = document.getElementById('step-counter');
+    const stepTitle = document.getElementById('step-title');
+    const progressBar = document.getElementById('progress-bar');
+    const scannerProgressBar = document.getElementById('scanner-progress-bar');
 
-  // Step 1: Select category
-  document.querySelectorAll('.symptom-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      selectedCategory = btn.getAttribute('data-category') || 'abs';
-      goToStep(2);
+    // Known OBD Error Codes Database
+    const obdDatabase = {
+      '01276': {
+        category: 'abs',
+        title: 'Дефект в хидравлична помпа ABS (V64)',
+        cause: 'Код 01276 (VAG): Дефект в ел. мотора на помпа V64 или прекъснати алуминиеви бондинг нишки към силовите транзистори.',
+        price: '180 – 320 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      '01130': {
+        category: 'abs',
+        title: 'Недостоверна работа на ABS модула (01130)',
+        cause: 'Код 01130 (VAG): Електрически смущения или прекъсваща връзка в блока за управление ATE MK60.',
+        price: '180 – 320 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      '16352': {
+        category: 'abs',
+        title: 'Вътрешен хардуерен дефект в контролния блок (16352)',
+        cause: 'Код 16352 (03FD): Вътрешна електрическа повреда в микроконтролера или EEPROM паметта на ABS модула.',
+        price: '200 – 320 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      '5DF0': {
+        category: 'abs',
+        title: 'Дефект в ел. мотора на хидравличната помпа DSC (5DF0)',
+        cause: 'Код 5DF0 (BMW DSC): Износен четкодържател на помпата или прекъснат краен транзистор в ATE MK60E5 модула.',
+        price: '220 – 340 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      '5DF1': {
+        category: 'abs',
+        title: 'Блокирал двигател на DSC помпата (5DF1)',
+        cause: 'Код 5DF1 (BMW DSC): Заклинил ротор на помпата или дефект в управляващото реле/драйвер в блока.',
+        price: '220 – 340 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      'C1380': {
+        category: 'abs',
+        title: 'Дефект в рециркулационна помпа ESP (C1380)',
+        cause: 'Код C1380 (Peugeot / Citroen): Вътрешна електрическа повреда в мотора на помпата на Bosch 8.0/ESP блока.',
+        price: '180 – 300 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      'C1350': {
+        category: 'abs',
+        title: 'Неизправност в соленоидните клапани на ABS (C1350)',
+        cause: 'Код C1350 (PSA): Прекъсната верига или студена спойка в управлението на електромагнитните клапани.',
+        price: '190 – 310 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-abs-modul/',
+        linkText: 'Виж ремонт на ABS модули',
+      },
+      'P0606': {
+        category: 'ecu',
+        title: 'Вътрешна процесорна грешка в ECU (P0606 / 16986)',
+        cause: 'Код P0606: Дефект в основния процесор на двигателя (MCU) или вътрешния стабилизатор на захранването 5V/3.3V.',
+        price: '220 – 480 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      '16986': {
+        category: 'ecu',
+        title: 'Грешка в контролната сума / ROM паметта (16986)',
+        cause: 'Код 16986 (VAG): Повреда във Flash паметта или микропрограмата на двигателния блок (ECU).',
+        price: '220 – 480 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'P0300': {
+        category: 'ecu',
+        title: 'Прекъсване на запалването в няколко цилиндъра (P0300)',
+        cause: 'Код P0300: При изправна запалителна система проблемът се корени в изгорял общ драйвер за инжектори в ECU.',
+        price: '220 – 420 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'P0301': {
+        category: 'ecu',
+        title: 'Прекъсване в 1-ви цилиндър от дефектен ECU драйвер (P0301)',
+        cause: 'Код P0301: Изгорял краен силов MOSFET / IGBT транзистор за бобината или дюзата на цилиндър 1.',
+        price: '200 – 380 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'P0302': {
+        category: 'ecu',
+        title: 'Прекъсване в 2-ри цилиндър от дефектен ECU драйвер (P0302)',
+        cause: 'Код P0302: Изгорял краен силов транзистор за бобината или дюзата на цилиндър 2 в контролера.',
+        price: '200 – 380 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'P0303': {
+        category: 'ecu',
+        title: 'Прекъсване в 3-ти цилиндър от дефектен ECU драйвер (P0303)',
+        cause: 'Код P0303: Дефектирал изходен канал за запалване/впръскване на цилиндър 3 в компютъра.',
+        price: '200 – 380 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'P0304': {
+        category: 'ecu',
+        title: 'Прекъсване в 4-ти цилиндър от дефектен ECU драйвер (P0304)',
+        cause: 'Код P0304: Дефектирал изходен канал за запалване/впръскване на цилиндър 4 в компютъра.',
+        price: '200 – 380 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'DF017': {
+        category: 'ecu',
+        title: 'Верига за управление на главното реле (DF017)',
+        cause: 'Код DF017 (Renault): Повреда в управляващия силов ключ на компютъра към захранващото реле.',
+        price: '220 – 400 лв.',
+        time: '24 – 48 часа',
+        link: '/uslugi/remont-na-ecu-kompyutar/',
+        linkText: 'Виж ремонт на ECU компютър',
+      },
+      'U0100': {
+        category: 'can',
+        title: 'Липса на комуникация с двигателния ECU компютър (U0100)',
+        cause: 'Код U0100: Прекъсната връзка по CAN-Bus шината, повреден CAN трансивър (чип TJA1050/1040) или липса на захранване.',
+        price: '90 – 180 лв.',
+        time: 'В рамките на деня (24 ч.)',
+        link: '/uslugi/avtodiagnostika/',
+        linkText: 'Виж автодиагностика и комуникация',
+      },
+    };
+
+    // Step 1: Select category
+    document.querySelectorAll('.symptom-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        selectedCategory = btn.getAttribute('data-category') || 'abs';
+        goToStep(2);
+      });
     });
-  });
 
-  // Step 2: Select brand
-  document.querySelectorAll('.brand-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      selectedBrand = btn.getAttribute('data-brand') || 'Друга марка';
-      goToStep(3);
+    // Step 2: Select brand
+    document.querySelectorAll('.brand-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        selectedBrand = btn.getAttribute('data-brand') || 'Друга марка';
+        goToStep(3);
+      });
     });
-  });
 
-  // Back buttons
-  document.getElementById('back-to-step-1')?.addEventListener('click', () => goToStep(1));
-  document.getElementById('back-to-step-2')?.addEventListener('click', () => goToStep(2));
-  document.getElementById('restart-wizard-btn')?.addEventListener('click', () => goToStep(1));
+    // Back buttons
+    document.getElementById('back-to-step-1')?.addEventListener('click', () => goToStep(1));
+    document.getElementById('back-to-step-2')?.addEventListener('click', () => goToStep(2));
+    document.getElementById('restart-wizard-btn')?.addEventListener('click', resetWizard);
 
-  // Step 3: Finish and diagnose
-  document.getElementById('generate-diagnosis-btn')?.addEventListener('click', () => {
-    showResult();
-  });
+    // Step 3: Trigger 600ms animated calculation
+    document.getElementById('generate-diagnosis-btn')?.addEventListener('click', () => {
+      startDiagnosticScan();
+    });
 
-  // Form submit handler
-  document.getElementById('wizard-lead-form')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const successMsg = document.getElementById('wizard-form-success');
-    if (successMsg) successMsg.classList.remove('hidden');
-  });
+    // Form submit handler
+    document.getElementById('wizard-lead-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const successMsg = document.getElementById('wizard-form-success');
+      if (successMsg) successMsg.classList.remove('hidden');
+    });
 
-  function goToStep(step) {
-    step1.classList.add('hidden');
-    step2.classList.add('hidden');
-    step3.classList.add('hidden');
-    stepResult.classList.add('hidden');
+    function goToStep(step) {
+      step1.classList.add('hidden');
+      step2.classList.add('hidden');
+      step3.classList.add('hidden');
+      if (stepLoading) stepLoading.classList.add('hidden');
+      stepResult.classList.add('hidden');
 
-    if (step === 1) {
-      step1.classList.remove('hidden');
-      counter.innerText = 'Стъпка 1 от 3';
-      stepTitle.innerText = 'Избор на основен симптом';
-      progressBar.style.width = '33%';
-    } else if (step === 2) {
-      step2.classList.remove('hidden');
-      counter.innerText = 'Стъпка 2 от 3';
-      stepTitle.innerText = 'Избор на марка автомобил';
-      progressBar.style.width = '66%';
-    } else if (step === 3) {
-      step3.classList.remove('hidden');
-      counter.innerText = 'Стъпка 3 от 3';
-      stepTitle.innerText = 'Допълнителни детайли';
+      if (step === 1) {
+        step1.classList.remove('hidden');
+        counter.innerText = 'Стъпка 1 от 3';
+        stepTitle.innerText = 'Избор на основен симптом';
+        progressBar.style.width = '33%';
+      } else if (step === 2) {
+        step2.classList.remove('hidden');
+        counter.innerText = 'Стъпка 2 от 3';
+        stepTitle.innerText = 'Избор на марка автомобил';
+        progressBar.style.width = '66%';
+      } else if (step === 3) {
+        step3.classList.remove('hidden');
+        counter.innerText = 'Стъпка 3 от 3';
+        stepTitle.innerText = 'Допълнителни детайли';
+        progressBar.style.width = '100%';
+      }
+    }
+
+    function startDiagnosticScan() {
+      step1.classList.add('hidden');
+      step2.classList.add('hidden');
+      step3.classList.add('hidden');
+      stepResult.classList.add('hidden');
+      if (stepLoading) stepLoading.classList.remove('hidden');
+
+      counter.innerText = 'Лабораторен анализ...';
+      stepTitle.innerText = 'Обработка на симптомите';
       progressBar.style.width = '100%';
+
+      if (scannerProgressBar) {
+        scannerProgressBar.style.width = '0%';
+        requestAnimationFrame(() => {
+          scannerProgressBar.style.width = '100%';
+        });
+      }
+
+      // 600ms perceived performance transition
+      setTimeout(() => {
+        if (stepLoading) stepLoading.classList.add('hidden');
+        showResult();
+      }, 600);
     }
-  }
 
-  function showResult() {
-    step1.classList.add('hidden');
-    step2.classList.add('hidden');
-    step3.classList.add('hidden');
-    stepResult.classList.remove('hidden');
+    function showResult() {
+      stepResult.classList.remove('hidden');
+      counter.innerText = 'Резултат от теста';
+      stepTitle.innerText = 'Препоръчано сервизно решение';
 
-    counter.innerText = 'Резултат от теста';
-    stepTitle.innerText = 'Препоръчано решение';
-    progressBar.style.width = '100%';
+      const resTitle = document.getElementById('result-title');
+      const resBrand = document.getElementById('result-brand');
+      const resCause = document.getElementById('result-cause');
+      const resTiming = document.getElementById('result-timing');
+      const resPrice = document.getElementById('result-price');
+      const resTime = document.getElementById('result-time');
+      const resLink = document.getElementById('result-service-link');
+      const resLinkText = document.getElementById('result-link-text');
+      const resCodeRow = document.getElementById('result-code-row');
+      const resCode = document.getElementById('result-code');
 
-    const resTitle = document.getElementById('result-title');
-    const resBrand = document.getElementById('result-brand');
-    const resCause = document.getElementById('result-cause');
-    const resLink = document.getElementById('result-service-link');
-    const resLinkText = document.getElementById('result-link-text');
+      if (resBrand) resBrand.innerText = selectedBrand;
 
-    if (resBrand) resBrand.innerText = selectedBrand;
+      // Evaluate Symptom Timing
+      const selectedTimingInput = document.querySelector('input[name="timing"]:checked');
+      const timingVal = selectedTimingInput ? selectedTimingInput.value : 'permanent';
+      let timingDescription = 'Постоянен отказ (хардуерно прекъсване или дефектирал компонент)';
+      if (timingVal === 'intermittent') {
+        timingDescription = 'Прекъсващ термичен дефект (микропукнатини в спойките или дефектиращи бондинг нишки при загряване)';
+      } else if (timingVal === 'rain') {
+        timingDescription = 'Влажностен пробив (компрометирана изолация, влага в буксата или електрохимична корозия по пиновете)';
+      }
+      if (resTiming) resTiming.innerText = timingDescription;
 
-    if (selectedCategory === 'abs') {
-      resTitle.innerText = 'Дефект в електронния блок на ABS/ESP помпата';
-      resCause.innerText = 'Прекъсване на вътрешни бондинг проводници или дефект в соленоидния контролер (често срещано при ATE MK60 / Bosch 8.0/9.0).';
-      resLink.href = '/uslugi/remont-na-abs-modul/';
-      resLinkText.innerText = 'Виж пълна информация за Ремонт на ABS модули';
-    } else if (selectedCategory === 'ecu') {
-      resTitle.innerText = 'Дефект в двигателния компютър (ECU)';
-      resCause.innerText = 'Изгорял краен транзистор (driver) за дюзи/бобини, дефектно 5V референтно захранване или повредена EEPROM/Flash памет.';
-      resLink.href = '/uslugi/remont-na-ecu-kompyutar/';
-      resLinkText.innerText = 'Виж процедура за Ремонт и клониране на ECU';
-    } else if (selectedCategory === 'tablo') {
-      resTitle.innerText = 'Хардуерен дефект в таблото / контролния панел';
-      resCause.innerText = 'Дефектирал микропроцесор (Motorola/Freescale), прекъснат лентов кабел на LCD дисплея или износени стъпкови моторчета на стрелките.';
-      resLink.href = '/uslugi/remont-na-avtomobilno-tablo/';
-      resLinkText.innerText = 'Виж детайли за Ремонт на автомобилни табла';
-    } else {
-      resTitle.innerText = 'Нарушена комуникация по CAN-Bus шината';
-      resCause.innerText = 'Късо съединение между CAN High и CAN Low проводници, повреден CAN трансивър (чип TJA1050) или Gateway модул.';
-      resLink.href = '/uslugi/avtodiagnostika/';
-      resLinkText.innerText = 'Виж детайли за Осцилоскопна автодиагностика';
+      // Evaluate OBD Error Code
+      const errorCodeInput = document.getElementById('error-code-input');
+      const rawCode = errorCodeInput ? errorCodeInput.value.trim().toUpperCase() : '';
+      let matchedOBD = null;
+
+      if (rawCode) {
+        // Direct match or sanitized match
+        for (const [codeKey, data] of Object.entries(obdDatabase)) {
+          if (rawCode.includes(codeKey) || codeKey.includes(rawCode)) {
+            matchedOBD = { code: codeKey, ...data };
+            break;
+          }
+        }
+      }
+
+      if (matchedOBD) {
+        if (resCodeRow) resCodeRow.classList.remove('hidden');
+        if (resCode) resCode.innerText = `${matchedOBD.code} — ${matchedOBD.title}`;
+        if (resTitle) resTitle.innerText = matchedOBD.title;
+        if (resCause) resCause.innerText = matchedOBD.cause;
+        if (resPrice) resPrice.innerText = matchedOBD.price;
+        if (resTime) resTime.innerText = matchedOBD.time;
+        if (resLink) resLink.href = matchedOBD.link;
+        if (resLinkText) resLinkText.innerText = matchedOBD.linkText;
+      } else if (rawCode) {
+        // User entered a code not in DB
+        if (resCodeRow) resCodeRow.classList.remove('hidden');
+        if (resCode) resCode.innerText = `${rawCode} (Записана специфична грешка)`;
+        applyCategoryDefaults(selectedCategory, resTitle, resCause, resPrice, resTime, resLink, resLinkText);
+      } else {
+        if (resCodeRow) resCodeRow.classList.add('hidden');
+        applyCategoryDefaults(selectedCategory, resTitle, resCause, resPrice, resTime, resLink, resLinkText);
+      }
     }
-  }
-</script>
+
+    function applyCategoryDefaults(category, resTitle, resCause, resPrice, resTime, resLink, resLinkText) {
+      if (category === 'abs') {
+        if (resTitle) resTitle.innerText = 'Дефект в електронния блок на ABS/ESP помпата';
+        if (resCause) resCause.innerText = 'Прекъсване на вътрешни бондинг проводници или дефект в соленоидния контролер (често срещано при ATE MK60 / Bosch 8.0/9.0).';
+        if (resPrice) resPrice.innerText = '180 – 320 лв.';
+        if (resTime) resTime.innerText = '24 – 48 часа';
+        if (resLink) resLink.href = '/uslugi/remont-na-abs-modul/';
+        if (resLinkText) resLinkText.innerText = 'Виж пълна информация за Ремонт на ABS модули';
+      } else if (category === 'ecu') {
+        if (resTitle) resTitle.innerText = 'Дефект в двигателния компютър (ECU)';
+        if (resCause) resCause.innerText = 'Изгорял краен транзистор (driver) за дюзи/бобини, дефектно 5V референтно захранване или повредена EEPROM/Flash памет.';
+        if (resPrice) resPrice.innerText = '220 – 480 лв.';
+        if (resTime) resTime.innerText = '24 – 48 часа';
+        if (resLink) resLink.href = '/uslugi/remont-na-ecu-kompyutar/';
+        if (resLinkText) resLinkText.innerText = 'Виж процедура за Ремонт и клониране на ECU';
+      } else if (category === 'tablo') {
+        if (resTitle) resTitle.innerText = 'Хардуерен дефект в таблото / контролния панел';
+        if (resCause) resCause.innerText = 'Дефектирал микропроцесор (Motorola/Freescale), прекъснат лентов кабел на LCD дисплея или износени стъпкови моторчета на стрелките.';
+        if (resPrice) resPrice.innerText = '140 – 260 лв.';
+        if (resTime) resTime.innerText = '24 – 48 часа';
+        if (resLink) resLink.href = '/uslugi/remont-na-avtomobilno-tablo/';
+        if (resLinkText) resLinkText.innerText = 'Виж детайли за Ремонт на автомобилни табла';
+      } else {
+        if (resTitle) resTitle.innerText = 'Нарушена комуникация по CAN-Bus шината';
+        if (resCause) resCause.innerText = 'Късо съединение между CAN High и CAN Low проводници, повреден CAN трансивър (чип TJA1050) или Gateway модул.';
+        if (resPrice) resPrice.innerText = '90 – 180 лв.';
+        if (resTime) resTime.innerText = 'В рамките на деня (24 ч.)';
+        if (resLink) resLink.href = '/uslugi/avtodiagnostika/';
+        if (resLinkText) resLinkText.innerText = 'Виж детайли за Осцилоскопна автодиагностика';
+      }
+    }
+
+    function resetWizard() {
+      selectedCategory = 'abs';
+      selectedBrand = 'VAG (VW / Audi / Seat / Skoda)';
+
+      const errInput = document.getElementById('error-code-input');
+      if (errInput) errInput.value = '';
+
+      const timingPermanent = document.querySelector('input[name="timing"][value="permanent"]');
+      if (timingPermanent) timingPermanent.checked = true;
+
+      const leadName = document.getElementById('wizard-lead-name');
+      if (leadName) leadName.value = '';
+
+      const leadPhone = document.getElementById('wizard-lead-phone');
+      if (leadPhone) leadPhone.value = '';
+
+      const successMsg = document.getElementById('wizard-form-success');
+      if (successMsg) successMsg.classList.add('hidden');
+
+      const resCodeRow = document.getElementById('result-code-row');
+      if (resCodeRow) resCodeRow.classList.add('hidden');
+
+      goToStep(1);
+    }
+  </script>
+</BaseLayout>

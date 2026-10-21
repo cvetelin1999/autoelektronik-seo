@@ -1,0 +1,1206 @@
+{
+  "pages_count": 11,
+  "distinct_images_used_in_html": [
+    "/images/author-certification.svg",
+    "/images/hero-car-electronics.svg",
+    "/images/service-abs.svg",
+    "/images/service-diag.svg",
+    "/images/service-ecu.svg",
+    "/images/service-lab.svg",
+    "/images/service-tablo.svg",
+    "/images/video-repair-thumbnail.svg"
+  ],
+  "physical_images_in_public_dir": [
+    "author-certification.svg",
+    "diagnostic-flow.svg",
+    "hero-car-electronics.svg",
+    "map-location.svg",
+    "service-abs.svg",
+    "service-diag.svg",
+    "service-ecu.svg",
+    "service-lab.svg",
+    "service-tablo.svg",
+    "video-repair-thumbnail.svg"
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "file": "index.html",
+      "title": "AutoElektronik — Специализиран ремонт на автомобилна електроника в София | AutoElektronik",
+      "title_length": 89,
+      "description": "Специализиран лабораторен сервиз за ремонт на ABS модули, ECU двигателни компютри и автомобилни табла. 12 месеца гаранция, оригинални части и бърза диагностика.",
+      "desc_length": 160,
+      "word_count": 294,
+      "keywords_count": 5,
+      "keywords": [
+        "ремонт на автомобилна електроника",
+        "автодиагностика София",
+        "ремонт на ABS модул",
+        "ремонт на ECU автокомпютър",
+        "ремонт на километражно табло"
+      ],
+      "headings": {
+        "h1": [
+          "Професионаленремонт на автомобилна електроника"
+        ],
+        "h2": [
+          "Ремонт на критични електронни компоненти",
+          "Светна лампа на таблото, но не знаеш какво означава?",
+          "Как работим в 4 ясни стъпки",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Ремонт на ABS / ESP модули",
+          "Ремонт на ECU компютри",
+          "Ремонт на автомобилни табла",
+          "Компютърна автодиагностика",
+          "Приемане и оглед",
+          "Стендова диагностика",
+          "Хардуерен ремонт",
+          "Финален тест и гаранция",
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/hero-car-electronics.svg",
+          "alt": "Схема на автомобилна електроника, компютърни блокове за управление и CAN-Bus мрежа",
+          "width": "800",
+          "height": "600",
+          "loading": "eager"
+        },
+        {
+          "src": "/images/service-abs.svg",
+          "alt": "Лабораторен ремонт и микрозапояване на прекъснати проводници в ABS модул",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/service-ecu.svg",
+          "alt": "Диагностичен стенд за ремонт и тестване на процесори в ECU двигателен компютър",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/service-tablo.svg",
+          "alt": "Сервиз за възстановяване на пиксели и стрелкови уреди на автомобилно табло",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/service-diag.svg",
+          "alt": "Осцилоскопна компютърна автодиагностика на CAN-Bus електронна шина",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        }
+      ],
+      "total_links": 32,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/kontakti/",
+      "file": "kontakti/index.html",
+      "title": "Контакти и Локация — Сервиз AutoElektronik в София | AutoElektronik",
+      "title_length": 67,
+      "description": "Свържи се с лабораторен сервиз AutoElektronik в София. Адрес: бул. Цариградско шосе №115, телефон: +359 88 812 3456. Google карта с точен пин и форма за запитване.",
+      "desc_length": 163,
+      "word_count": 198,
+      "keywords_count": 5,
+      "keywords": [
+        "сервиз автоелектроника София контакти",
+        "адрес сервиз за ремонт на ABS София",
+        "телефон сервиз за ремонт на ECU",
+        "локация ремонт на автоелектроника Цариградско шосе",
+        "приемане на модули по куриер Еконт Спиди"
+      ],
+      "headings": {
+        "h1": [
+          "Контакти и сервизна локация в София"
+        ],
+        "h2": [
+          "Информация за сервиза",
+          "Изпрати онлайн запитване",
+          "Локация на сервиза на картата (Google Map + Pin)",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [],
+      "total_links": 28,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Контакти и локация"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/otkrii-problema/",
+      "file": "otkrii-problema/index.html",
+      "title": "Открий проблема — Интерактивен диагностичен съветник | AutoElektronik",
+      "title_length": 69,
+      "description": "Интерактивен софтуерен въпросник за бърза ориентировъчна диагностика на автомобилна електроника. Разпознай повредата в ABS, ECU или таблото за 60 секунди.",
+      "desc_length": 154,
+      "word_count": 299,
+      "keywords_count": 5,
+      "keywords": [
+        "диагностика на автомобилна електроника",
+        "онлайн тест за повреда на кола",
+        "симптоми повреден ABS модул",
+        "проблем с ECU компютър",
+        "повреда в автомобилно табло"
+      ],
+      "headings": {
+        "h1": [
+          "Открий проблема в автомобилната електроника"
+        ],
+        "h2": [
+          "Какъв е главният симптом на автомобила?",
+          "Избери марката на автомобила",
+          "Допълнителни детайли за симптома",
+          "Дефект в електронен ABS модул",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Изпрати запитване за този модул",
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [],
+      "total_links": 27,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Открий проблема (Диагностичен въпросник)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/usloviya-za-polzvane/",
+      "file": "usloviya-za-polzvane/index.html",
+      "title": "Условия за ползване на уебсайта и сервизните услуги — AutoElektronik | AutoElektronik",
+      "title_length": 85,
+      "description": "Официални общи условия за ползване на уебсайта и условия за гаранция при извършване на лабораторни ремонти на автомобилна електроника в AutoElektronik.",
+      "desc_length": 151,
+      "word_count": 208,
+      "keywords_count": 5,
+      "keywords": [
+        "условия за ползване AutoElektronik",
+        "общи условия сервиз автоелектроника",
+        "гаранционни условия ремонт на модули",
+        "права на потребителите сервизни услуги",
+        "ремонт на автоелектроника правила"
+      ],
+      "headings": {
+        "h1": [
+          "Общи условия за ползване на уебсайта и сервизните услуги"
+        ],
+        "h2": [
+          "1. Общи разпоредби и идентичност на търговеца",
+          "2. Предмет на предоставяните услуги",
+          "3. Гаранционни условия и отговорност",
+          "4. Интелектуална собственост",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [],
+      "total_links": 26,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Условия за ползване"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/uslugi/avtodiagnostika/",
+      "file": "uslugi/avtodiagnostika/index.html",
+      "title": "Компютърна Автодиагностика и Осцилоскопен Анализ | AutoElektronik | AutoElektronik",
+      "title_length": 82,
+      "description": "Дълбока компютърна автодиагностика с цифров осцилоскоп в София. Откриване на трудни електронни повреди, проверка на CAN-Bus шини и анализ на сензори в реално време.",
+      "desc_length": 164,
+      "word_count": 239,
+      "keywords_count": 5,
+      "keywords": [
+        "компютърна автодиагностика София",
+        "диагностика с осцилоскоп",
+        "проверка на CAN-Bus мрежа",
+        "четене на грешки OBD2 София",
+        "живи данни сензори диагностика"
+      ],
+      "headings": {
+        "h1": [
+          "Компютърна автодиагностика и осцилоскопен анализ"
+        ],
+        "h2": [
+          "Каква е разликата между обикновено „четене на грешки“ и професионална автодиагностика?",
+          "С какво сервизно оборудване разполагаме?",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/service-diag.svg",
+          "alt": "Осцилоскопна форма на сигнала при диагностика на CAN-Bus автомобилна шина",
+          "width": "800",
+          "height": "500",
+          "loading": "eager"
+        }
+      ],
+      "total_links": 32,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Услуги",
+              "item": "https://autoelektronik-service.bg/uslugi/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Компютърна автодиагностика"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/uslugi/",
+      "file": "uslugi/index.html",
+      "title": "Услуги по ремонт на автомобилна електроника — AutoElektronik | AutoElektronik",
+      "title_length": 77,
+      "description": "Пълен каталог със специализирани услуги за автоелектроника: ремонт на ABS помпи, ECU двигателни компютри, километражни табла и осцилоскопна автодиагностика.",
+      "desc_length": 156,
+      "word_count": 224,
+      "keywords_count": 5,
+      "keywords": [
+        "сервизни услуги автоелектроника",
+        "ремонт на електронни блокове",
+        "рециклиране на ABS модули София",
+        "ремонт на ECU автокомпютър",
+        "възстановяване на автомобилно табло"
+      ],
+      "headings": {
+        "h1": [
+          "Услуги по ремонт на автомобилна електроника"
+        ],
+        "h2": [
+          "Ремонт на ABS / ESP модули",
+          "Ремонт на ECU двигателни компютри",
+          "Ремонт на автомобилни табла",
+          "Компютърна автодиагностика и CAN-Bus",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/service-abs.svg",
+          "alt": "Илюстрация на микрозапояване на прекъснати проводници в електронен ABS модул",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/service-ecu.svg",
+          "alt": "Стенд за диагностика и клониране на ECU двигателен компютър",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/service-tablo.svg",
+          "alt": "Ремонт и подмяна на LCD дисплей и стрелкови моторчета на автомобилно табло",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/service-diag.svg",
+          "alt": "Цифров осцилоскоп показващ формата на сигнала по автомобилна CAN-Bus мрежа",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        }
+      ],
+      "total_links": 34,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Услуги по автоелектроника"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/uslugi/remont-na-abs-modul/",
+      "file": "uslugi/remont-na-abs-modul/index.html",
+      "title": "Ремонт на ABS модул и помпа — 12 Месеца Гаранция | AutoElektronik | AutoElektronik",
+      "title_length": 82,
+      "description": "Специализиран лабораторен ремонт и рециклиране на електронни ABS/ESP модули и помпи. Прецизно възстановяване на микробондинг проводници за ATE MK60, Bosch 8.0 и TRW.",
+      "desc_length": 165,
+      "word_count": 387,
+      "keywords_count": 5,
+      "keywords": [
+        "ремонт на ABS модул",
+        "рециклиране на ABS помпа",
+        "светят лампи ABS и ESP",
+        "грешка 01276 помпа ABS",
+        "ремонт на ATE MK60 Bosch 8.0"
+      ],
+      "headings": {
+        "h1": [
+          "Ремонт на ABS модул и хидравлична помпа"
+        ],
+        "h2": [
+          "Типични симптоми за дефектирал ABS / ESP модул",
+          "Най-често ремонтирани кодове за грешки при ABS",
+          "Защо лабораторен ремонт е по-добър избор от покупка на част втора употреба?",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Как се ремонтира и рециклира дефектирал ABS / ESP модул",
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/service-abs.svg",
+          "alt": "Схема на микрозапояване на бондинг проводници в електронен ABS модул",
+          "width": "800",
+          "height": "500",
+          "loading": "eager"
+        },
+        {
+          "src": "/images/video-repair-thumbnail.svg",
+          "alt": "Кадър от видеоклип показващ микрозапояване на прекъснати проводници в ABS модул ATE MK60",
+          "width": "1280",
+          "height": "720",
+          "loading": "lazy"
+        }
+      ],
+      "total_links": 32,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Услуги",
+              "item": "https://autoelektronik-service.bg/uslugi/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ремонт на ABS модул"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/uslugi/remont-na-avtomobilno-tablo/",
+      "file": "uslugi/remont-na-avtomobilno-tablo/index.html",
+      "title": "Ремонт на Автомобилни Табла и Дисплеи (Пиксели) | AutoElektronik | AutoElektronik",
+      "title_length": 81,
+      "description": "Професионален ремонт на километражни табла, смяна на лентови кабели и LCD дисплеи, възстановяване на износени стъпкови моторчета за стрелки в София.",
+      "desc_length": 148,
+      "word_count": 279,
+      "keywords_count": 5,
+      "keywords": [
+        "ремонт на автомобилно табло",
+        "смяна на дисплей табло пиксели",
+        "ремонт на стрелки километраж",
+        "ремонт на табла Jaeger Marelli",
+        "проблем с табло Audi BMW Mercedes"
+      ],
+      "headings": {
+        "h1": [
+          "Ремонт на автомобилни табла, дисплеи и стрелкови уреди"
+        ],
+        "h2": [
+          "Най-често срещани дефекти при автомобилните табла",
+          "Как възстановяваме таблата в нашата лаборатория?",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/service-tablo.svg",
+          "alt": "Ремонт и калибриране на скоростомер и LCD дисплей на автомобилно табло",
+          "width": "800",
+          "height": "500",
+          "loading": "eager"
+        }
+      ],
+      "total_links": 32,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Услуги",
+              "item": "https://autoelektronik-service.bg/uslugi/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ремонт на автомобилно табло"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/uslugi/remont-na-ecu-kompyutar/",
+      "file": "uslugi/remont-na-ecu-kompyutar/index.html",
+      "title": "Ремонт на ECU Двигателен Компютър и Клониране | AutoElektronik | AutoElektronik",
+      "title_length": 79,
+      "description": "Професионален ремонт и клониране на двигателни компютри (ECU / ECM). Подмяна на крайни стъпала, възстановяване след късо съединение и 12 месеца гаранция.",
+      "desc_length": 153,
+      "word_count": 344,
+      "keywords_count": 5,
+      "keywords": [
+        "ремонт на ECU компютър",
+        "ремонт на двигателен компютър",
+        "клониране на ECU София",
+        "проблем с запалване компютър",
+        "Bosch EDC16 EDC17 MED17 ремонт"
+      ],
+      "headings": {
+        "h1": [
+          "Ремонт на ECU компютър и клониране на модули"
+        ],
+        "h2": [
+          "Какви са симптомите при дефектирал двигателен компютър?",
+          "Как протича процедурата по тестване и ремонт на ECU?",
+          "Поддържани марки и типове двигателни компютри",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Bench тестване без разглобяване",
+          "Пълен бекъп (Clone Backup)",
+          "Компонентен ремонт и подмяна на чипове",
+          "Тест под натоварване и херметизация",
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/service-ecu.svg",
+          "alt": "Стенд за диагностика и клониране на микропроцесори в ECU двигателен компютър",
+          "width": "800",
+          "height": "500",
+          "loading": "eager"
+        }
+      ],
+      "total_links": 32,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Услуги",
+              "item": "https://autoelektronik-service.bg/uslugi/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ремонт на ECU компютър"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/za-nas/",
+      "file": "za-nas/index.html",
+      "title": "За нас — Сервиз и Лаборатория за Автоелектроника | AutoElektronik | AutoElektronik",
+      "title_length": 82,
+      "description": "Научи повече за AutoElektronik — лабораторен сервизен център в София, специализиран в рециклиране и ремонт на автомобилни електронни блокове с 12 месеца гаранция.",
+      "desc_length": 162,
+      "word_count": 229,
+      "keywords_count": 5,
+      "keywords": [
+        "сервиз за автоелектроника София",
+        "лаборатория за ремонт на автокомпютри",
+        "гаранция ремонт на ABS модул",
+        "електронни инженери автоелектроника",
+        "професионален сервиз ECU София"
+      ],
+      "headings": {
+        "h1": [
+          "За сервиз и лаборатория AutoElektronik"
+        ],
+        "h2": [
+          "Инженерният подход в авторемонтите",
+          "Основни принципи, които ни отличават",
+          "Имате съмнение за дефектирала електроника?",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Писмена гаранция 12 месеца",
+          "Безплатна диагностика при извършен ремонт",
+          "Партньорство с автосервизи в цяла България",
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [
+        {
+          "src": "/images/service-lab.svg",
+          "alt": "Лабораторна поялна станция JBC и осцилоскоп за ремонт на автоелектроника",
+          "width": "800",
+          "height": "500",
+          "loading": "eager"
+        },
+        {
+          "src": "/images/author-certification.svg",
+          "alt": "Сертификат за стандарт IPC-7711 и 12 месеца писмена гаранция от AutoElektronik",
+          "width": "800",
+          "height": "500",
+          "loading": "lazy"
+        }
+      ],
+      "total_links": 30,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "За нас (Лаборатория и екип)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/zashtita-na-dannite/",
+      "file": "zashtita-na-dannite/index.html",
+      "title": "Политика за Защита на Личните Данни (GDPR) — AutoElektronik | AutoElektronik",
+      "title_length": 76,
+      "description": "Политика за поверителност и защита на личните данни съгласно Регламент (ЕС) 2016/679 (GDPR) на специализиран сервиз за автоелектроника AutoElektronik.",
+      "desc_length": 150,
+      "word_count": 222,
+      "keywords_count": 5,
+      "keywords": [
+        "политика за поверителност AutoElektronik",
+        "защита на личните данни GDPR",
+        "обработка на лични данни сервиз",
+        "права на потребителите лични данни",
+        "политика за бисквитки автосервиз"
+      ],
+      "headings": {
+        "h1": [
+          "Политика за поверителност и защита на личните данни"
+        ],
+        "h2": [
+          "1. Администратор на лични данни",
+          "2. Какви лични данни събираме и за какви цели?",
+          "3. Правно основание и срок на съхранение",
+          "4. Вашите права съгласно европейското законодателство",
+          "Информация за сервиза, правни връзки и навигация"
+        ],
+        "h3": [
+          "Специализирани услуги",
+          "Бързи връзки",
+          "Стандарти и партньорства"
+        ]
+      },
+      "images": [],
+      "total_links": 26,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "AutoElektronik - Сервиз и лаборатория за автомобилна електроника",
+          "image": "https://autoelektronik-service.bg/images/service-lab.jpg",
+          "@id": "https://autoelektronik-service.bg/#organization",
+          "url": "https://autoelektronik-service.bg",
+          "telephone": "+359888123456",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "бул. Цариградско шосе №115",
+            "addressLocality": "София",
+            "postalCode": "1784",
+            "addressCountry": "BG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.6617,
+            "longitude": 23.3853
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/autoelektronik.bg",
+            "https://github.com/autoelektronik"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "https://autoelektronik-service.bg/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Защита на данните (GDPR)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

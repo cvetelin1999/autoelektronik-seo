@@ -1,0 +1,348 @@
+{
+  "05-Mini-Project-Presentation-Deck.md": {
+    "file_size": 40124,
+    "line_count": 288,
+    "slide_count": 12,
+    "expected_slide_count": 12,
+    "count_matches": true,
+    "numbering_matches": true,
+    "slides": [
+      {
+        "num": 1,
+        "title": "Заглавен слайд (Title Slide)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 111,
+        "notes_cyrillic_chars": 652,
+        "status": "PASS"
+      },
+      {
+        "num": 2,
+        "title": "Проблемът и Пазарната Ниша (Market Opportunity)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 115,
+        "notes_cyrillic_chars": 564,
+        "status": "PASS"
+      },
+      {
+        "num": 3,
+        "title": "Бранд Концепция, Цели и Целева Аудитория (Audience Segmentation)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 98,
+        "notes_cyrillic_chars": 515,
+        "status": "PASS"
+      },
+      {
+        "num": 4,
+        "title": "Информационна Архитектура и Карта на Сайта (3-Level Sitemap)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 83,
+        "notes_cyrillic_chars": 481,
+        "status": "PASS"
+      },
+      {
+        "num": 5,
+        "title": "Семантично Ядро и Избор на Домейн (Keyword Strategy & Domain)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 74,
+        "notes_cyrillic_chars": 441,
+        "status": "PASS"
+      },
+      {
+        "num": 6,
+        "title": "Конкурентен Анализ — Преглед на Пазара (Market Overview)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 85,
+        "notes_cyrillic_chars": 495,
+        "status": "PASS"
+      },
+      {
+        "num": 7,
+        "title": "Детайлен Анализ през 5-те Задължителни Перспективи",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 92,
+        "notes_cyrillic_chars": 514,
+        "status": "PASS"
+      },
+      {
+        "num": 8,
+        "title": "Google Ads Разузнаване и Платена Стратегия (PPC Intelligence)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 95,
+        "notes_cyrillic_chars": 439,
+        "status": "PASS"
+      },
+      {
+        "num": 9,
+        "title": "Скриптовата Иновация — Диагностичният Съветник (Изискване №1)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 84,
+        "notes_cyrillic_chars": 487,
+        "status": "PASS"
+      },
+      {
+        "num": 10,
+        "title": "Техническата SEO Рамка (Architecture & Best Practices)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 80,
+        "notes_cyrillic_chars": 401,
+        "status": "PASS"
+      },
+      {
+        "num": 11,
+        "title": "Превъзходството на AutoElektronik (Winning Strategy)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 65,
+        "notes_cyrillic_chars": 390,
+        "status": "PASS"
+      },
+      {
+        "num": 12,
+        "title": "Заключение и Пътна Карта към Финалния Проект (Next Steps)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 64,
+        "notes_cyrillic_chars": 371,
+        "status": "PASS"
+      }
+    ],
+    "qas": [
+      {
+        "q_num": 1,
+        "question": "„Защо избрахте да анализирате точно тези 3 конкурента и как гарантирате, че изводите ви отразяват реалния пазар в София?“",
+        "answer_words": 76,
+        "answer_cyrillic": 449,
+        "answer_excerpt": "- **Примерен отговор на студента:**  \n  *„Подбрахме три коренно различни бизнес модела, за да получим пълна 360-градусова панорама на дигиталната среда. `avto-elektronchik.bg` представлява прекия софи"
+      },
+      {
+        "q_num": 2,
+        "question": "„По какъв начин скриптовата страница 'Открий проблема' допринася конкретно за SEO оптимизацията на сайта?“",
+        "answer_words": 74,
+        "answer_cyrillic": 392,
+        "answer_excerpt": "- **Примерен отговор на студента:**  \n  *„Скриптовата страница изпълнява едновременно две критични SEO функции. Първо, тя подобрява поведенческите сигнали (User Engagement Signals): вместо потребителя"
+      }
+    ]
+  },
+  "06-Final-Project-Presentation-Deck.md": {
+    "file_size": 53349,
+    "line_count": 399,
+    "slide_count": 16,
+    "expected_slide_count": 16,
+    "count_matches": true,
+    "numbering_matches": true,
+    "slides": [
+      {
+        "num": 1,
+        "title": "Заглавен слайд (Title Slide)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 113,
+        "notes_cyrillic_chars": 609,
+        "status": "PASS"
+      },
+      {
+        "num": 2,
+        "title": "Обобщение на Резултатите в Цифри (Executive Summary)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 81,
+        "notes_cyrillic_chars": 425,
+        "status": "PASS"
+      },
+      {
+        "num": 3,
+        "title": "Технологичен Стек и Архитектура (Tech Stack & SSG)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 84,
+        "notes_cyrillic_chars": 407,
+        "status": "PASS"
+      },
+      {
+        "num": 4,
+        "title": "Матрица за Покриване на 30-те Изисквания (The 30/30 Compliance Matrix)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 70,
+        "notes_cyrillic_chars": 378,
+        "status": "PASS"
+      },
+      {
+        "num": 5,
+        "title": "Изискване №1 — Скриптовата Страница „Открий Проблема“",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 87,
+        "notes_cyrillic_chars": 485,
+        "status": "PASS"
+      },
+      {
+        "num": 6,
+        "title": "Изисквания №6, 7, 8 — Дълбочинно Авторско Съдържание (E-E-A-T)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 89,
+        "notes_cyrillic_chars": 459,
+        "status": "PASS"
+      },
+      {
+        "num": 7,
+        "title": "Изисквания №9, 10, 11, 12 — Изображения, Линкове и Атрибути",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 78,
+        "notes_cyrillic_chars": 378,
+        "status": "PASS"
+      },
+      {
+        "num": 8,
+        "title": "Изискване №5 — Екосистемата от Трите XML Карти (Sitemaps)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 75,
+        "notes_cyrillic_chars": 387,
+        "status": "PASS"
+      },
+      {
+        "num": 9,
+        "title": "Изисквания №15 и 16 — Линк Профил и Архитектура на Връзките",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 79,
+        "notes_cyrillic_chars": 424,
+        "status": "PASS"
+      },
+      {
+        "num": 10,
+        "title": "Изисквания №23, 24, 25, 26 — Локално SEO, Социални Сигнали и Анализ",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 83,
+        "notes_cyrillic_chars": 385,
+        "status": "PASS"
+      },
+      {
+        "num": 11,
+        "title": "Изискване №28 — Университетската Таблица за Оптимизация",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 78,
+        "notes_cyrillic_chars": 401,
+        "status": "PASS"
+      },
+      {
+        "num": 12,
+        "title": "Изискване №29 — Емпирични Измервания на Скоростта (PageSpeed 100/100)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 80,
+        "notes_cyrillic_chars": 411,
+        "status": "PASS"
+      },
+      {
+        "num": 13,
+        "title": "Изискване №2 — Валидност на HTML Кода (0 Грешки в W3C)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 77,
+        "notes_cyrillic_chars": 407,
+        "status": "PASS"
+      },
+      {
+        "num": 14,
+        "title": "Мобилно Преживяване и Достъпност (WCAG AA)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 80,
+        "notes_cyrillic_chars": 410,
+        "status": "PASS"
+      },
+      {
+        "num": 15,
+        "title": "Бизнес Приложимост и Търговска Готовност (Commercial Readiness)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 79,
+        "notes_cyrillic_chars": 467,
+        "status": "PASS"
+      },
+      {
+        "num": 16,
+        "title": "Заключение и Академична Защита (Defense Q&A)",
+        "has_blueprint": true,
+        "has_bullets": true,
+        "has_notes": true,
+        "notes_word_count": 73,
+        "notes_cyrillic_chars": 425,
+        "status": "PASS"
+      }
+    ],
+    "qas": [
+      {
+        "q_num": 1,
+        "question": "„Защо избрахте модерен статичен генератор като Astro вместо утвърдена платформа като WordPress, за която съществуват стотици готови SEO плъгини като Yoast или RankMath?“",
+        "answer_words": 124,
+        "answer_cyrillic": 553,
+        "answer_excerpt": "- **Моделен отговор на студента:**  \n  *„WordPress разчита на динамично генериране чрез PHP и MySQL база данни при всяко потребителско посещение. Това добавя десетки външни заявки, натоварва сървъра и"
+      },
+      {
+        "q_num": 2,
+        "question": "„Как гарантирахте съвършено нулев Cumulative Layout Shift (CLS = 0.000) при наличие на множество графични елементи и карти на сайта?“",
+        "answer_words": 96,
+        "answer_cyrillic": 499,
+        "answer_excerpt": "- **Моделен отговор на студента:**  \n  *„Постигнахме CLS = 0.000 чрез стриктното изпълнение на Изискване №10 от университетския конспект. Всяко едно от 9-те изображения в сайта има предварително и твъ"
+      },
+      {
+        "q_num": 3,
+        "question": "„Каква е академичната и практическата логика зад използването на три отделни XML карти (Sitemaps) вместо една обща обединена карта?“",
+        "answer_words": 110,
+        "answer_cyrillic": 579,
+        "answer_excerpt": "- **Моделен отговор на студента:**  \n  *„Разделянето на картите на три отделни потока следва официалните спецификации на Google за мултимедийно индексиране. Стандартната карта sitemap.xml използва баз"
+      },
+      {
+        "q_num": 4,
+        "question": "„Как решихте проблема с потенциалното дублиране на съдържание между началната страница и специализираните страници за услуги?“",
+        "answer_words": 87,
+        "answer_cyrillic": 539,
+        "answer_excerpt": "- **Моделен отговор на студента:**  \n  *„Приложихме строг архитектурен модел тип Hub-and-Spoke (Pillar-Cluster). На началната страница предоставихме единствено синтезирани резюмета (ексцерпти) от по 2"
+      }
+    ]
+  }
+}

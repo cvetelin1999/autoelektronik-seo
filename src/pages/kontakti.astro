@@ -17,7 +17,7 @@ const keywords = [
 ---
 
 <BaseLayout
-  title="Контакти и Локация — Сервиз AutoElektronik в София"
+  title="Контакти и Локация в София | AutoElektronik"
   description="Свържи се с лабораторен сервиз AutoElektronik в София. Адрес: бул. Цариградско шосе №115, телефон: +359 88 812 3456. Google карта с точен пин и форма за запитване."
   keywords={keywords}
 >
@@ -222,9 +222,9 @@ const keywords = [
         <iframe
           title="Google Map с точен сервизен пин на AutoElektronik на бул. Цариградско шосе София"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.8837130232497!2d23.3831113!3d42.6617001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8683e39075e7%3A0x6b107e0c406085a5!2zYnVsLiAiVHNhcmlncmFkc2tvIHNob3NlIiAxMTUsIFNvZmlh!5e0!3m2!1sen!2sbg!4v1700000000000!5m2!1sen!2sbg"
-          width="100%"
-          height="100%"
-          style="border:0;"
+          width="1200"
+          height="500"
+          class="w-full h-full border-0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -232,12 +232,12 @@ const keywords = [
       </div>
     </div>
   </section>
-</BaseLayout>
 
-<script is:inline>
-  document.getElementById('contact-page-form')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const successMsg = document.getElementById('contact-form-success');
-    if (successMsg) successMsg.classList.remove('hidden');
-  });
-</script>
+  <script is:inline>
+    document.getElementById('contact-page-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const successMsg = document.getElementById('contact-form-success');
+      if (successMsg) successMsg.classList.remove('hidden');
+    });
+  </script>
+</BaseLayout>

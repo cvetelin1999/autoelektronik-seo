@@ -72,7 +72,7 @@ const services = [
 ---
 
 <BaseLayout
-  title="Услуги по ремонт на автомобилна електроника — AutoElektronik"
+  title="Сервизни Услуги по Автоелектроника | AutoElektronik"
   description="Пълен каталог със специализирани услуги за автоелектроника: ремонт на ABS помпи, ECU двигателни компютри, километражни табла и осцилоскопна автодиагностика."
   keywords={keywords}
 >
@@ -94,7 +94,7 @@ const services = [
   </section>
 
   <!-- Detailed Services Listing -->
-  <section class="py-16 bg-slate-50">
+  <div class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       {services.map((service, index) => (
         <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -159,5 +159,5 @@ const services = [
         </article>
       ))}
     </div>
-  </section>
+  </div>
 </BaseLayout>

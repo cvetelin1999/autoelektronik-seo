@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build:css": "tailwindcss -i ./src/styles/global.css -o ./public/css/styles.css --minify",
+    "build": "npm run build:css && astro build",
+    "audit": "node scripts/audit.mjs",
+    "validate:w3c": "node scripts/validate-w3c.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

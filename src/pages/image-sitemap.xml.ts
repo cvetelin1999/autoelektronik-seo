@@ -69,8 +69,8 @@ ${imageEntries
     <loc>${entry.pageUrl}</loc>
     <image:image>
       <image:loc>${entry.imageUrl}</image:loc>
-      <image:title><![CDATA[${entry.title}]]></image:title>
       <image:caption><![CDATA[${entry.caption}]]></image:caption>
+      <image:title><![CDATA[${entry.title}]]></image:title>
     </image:image>
   </url>`
   )

@@ -18,7 +18,7 @@ const keywords = [
 ---
 
 <BaseLayout
-  title="Ремонт на ABS модул и помпа — 12 Месеца Гаранция | AutoElektronik"
+  title="Ремонт на ABS Модул и Помпа (Гаранция) | AutoElektronik"
   description="Специализиран лабораторен ремонт и рециклиране на електронни ABS/ESP модули и помпи. Прецизно възстановяване на микробондинг проводници за ATE MK60, Bosch 8.0 и TRW."
   keywords={keywords}
 >
@@ -75,7 +75,7 @@ const keywords = [
   </section>
 
   <!-- In-depth Author Content Section (No plagiarism, expert technical text) -->
-  <section class="py-16 bg-white">
+  <div class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <!-- Section 1: Symptoms -->
@@ -121,32 +121,60 @@ const keywords = [
       </article>
 
       <!-- Section 2: Technical Repair Video Demonstration (Directly for Requirement #5c Video Sitemap) -->
-      <article class="p-6 sm:p-8 rounded-2xl bg-slate-900 text-white space-y-4">
+      <article class="p-6 sm:p-8 rounded-2xl bg-slate-900 text-white space-y-5">
         <div class="flex items-center justify-between flex-wrap gap-2">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-400">Видео демонстрация от лабораторията</span>
-          <span class="text-xs text-slate-400">Продължителност: 04:35 мин.</span>
+          <span class="text-xs text-slate-400">Продължителност: 14:20 мин. | Full HD</span>
         </div>
-        <h3 class="text-xl sm:text-2xl font-bold">
-          Как се ремонтира и рециклира дефектирал ABS / ESP модул
-        </h3>
+        <h2 class="text-xl sm:text-2xl font-bold">
+          Как се ремонтира и рециклира дефектирал ABS / ESP модул (ATE MK60)
+        </h2>
         <p class="text-sm text-slate-300 leading-relaxed">
-          В това кратко видео показваме пълния процес по лабораторно разхерметизиране, проверка на керамичната подложка под микроскоп и ултразвуково микрозапояване на нови златни/алуминиеви нишки с дебелина 35 микрона.
+          В това подробно техническо видео показваме реалния процес по лабораторно разглобяване на блок ATE Teves MK60, тестване на електромотора на помпата, разхерметизиране на електронната част и прецизно микрозапояване на вътрешните контактни пинове.
         </p>
 
-        <!-- Video Embed with Schema metadata -->
-        <div class="relative rounded-xl overflow-hidden border border-slate-800 bg-black aspect-video flex items-center justify-center group">
-          <img
-            src="/images/video-repair-thumbnail.svg"
-            width="1280"
-            height="720"
-            alt="Кадър от видеоклип показващ микрозапояване на прекъснати проводници в ABS модул ATE MK60"
-            class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+        <!-- Professional YouTube Video Embed -->
+        <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-black">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube-nocookie.com/embed/zmkAuDSU1Zo"
+            title="Видео ръководство: Ремонт и запояване на ABS модул ATE Teves MK60"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
             loading="lazy"
-          />
+          ></iframe>
         </div>
-        <p class="text-xs text-slate-400 text-center">
-          * Лабораторна процедура извършвана в антистатична среда по стандарта IPC-7711/7721.
-        </p>
+
+        <!-- HTML5 Local Video Player per Requirement #5c -->
+        <details class="group bg-slate-800/80 rounded-xl border border-slate-700/80 p-4 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-xs sm:text-sm text-brand-300 hover:text-brand-200">
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Алтернативен локален HTML5 плейър (директен лабораторен стрийм)
+            </span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="pt-4 space-y-3">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="/images/video-repair-thumbnail.svg"
+              class="w-full rounded-xl shadow border border-slate-700 bg-black aspect-video"
+            >
+              <source src="/videos/abs-module-repair-lab.mp4" type="video/mp4" />
+              <p class="text-xs text-slate-300 p-2">
+                Вашият браузър не поддържа HTML5 видео. Можете да <a href="/videos/abs-module-repair-lab.mp4" class="text-brand-400 underline" title="Изтеглете видеоклипа за ремонт на ABS модул">изтеглите видеоклипа тук</a>.
+              </p>
+            </video>
+          </div>
+        </details>
+
+        <div class="flex items-center justify-between flex-wrap gap-2 text-xs text-slate-400 pt-2 border-t border-slate-800">
+          <span>* Лабораторна процедура извършвана в антистатична среда по стандарта IPC-7711/7721.</span>
+          <a href="/video-sitemap.xml" class="text-brand-400 hover:underline" title="Преглед на XML видео картата на сайта">Video Sitemap XML (Изискване #5c) &rarr;</a>
+        </div>
       </article>
 
       <!-- Section 3: Diagnostic Codes -->
@@ -199,7 +227,7 @@ const keywords = [
           <a href="/uslugi/avtodiagnostika/" class="text-brand-700 font-semibold hover:underline ml-2" title="Прегледай услугата за компютърна автодиагностика">Компютърна автодиагностика</a>
         </div>
         <a
-          href="/otkrii-probleма/"
+          href="/otkrii-problema/"
           title="Направи интерактивния диагностичен тест за спирачна система"
           class="text-xs font-bold text-brand-700 hover:text-brand-900 underline"
         >
@@ -208,5 +236,5 @@ const keywords = [
       </div>
 
     </div>
-  </section>
+  </div>
 </BaseLayout>

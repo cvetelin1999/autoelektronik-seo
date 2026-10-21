@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import { getRouteSchema } from '../utils/schema';
 
 interface Props {
   title: string;
@@ -11,33 +12,35 @@ interface Props {
   ogType?: string;
   canonicalUrl?: string;
   schemaType?: 'LocalBusiness' | 'Service' | 'Article';
+  customSchema?: Record<string, any> | Array<Record<string, any>>;
 }
 
 const {
   title,
   description,
   keywords = [
-    'автоелектроника',
-    'ремонт на автоелектроника',
-    'ремонт на ABS модул',
-    'ремонт на ECU',
-    'автодиагностика София',
+    'автоелектроника', 'ремонт на автоелектроника',
+    'ремонт на ABS модул', 'ремонт на ECU', 'автодиагностика София',
   ],
   ogImage = '/images/autoelektronik-social-share.jpg',
   ogType = 'website',
   canonicalUrl = Astro.url.href,
+  customSchema,
 } = Astro.props;
 
 const currentPath = Astro.url.pathname;
 const siteUrl = 'https://autoelektronik-service.bg';
 const fullOgImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
+// Prevent double branding: eliminate duplicate "| AutoElektronik" while keeping titles crisp <= 60 chars
+const fullTitle = title.includes('AutoElektronik') ? title : `${title} | AutoElektronik`;
+const routeSchema = customSchema || getRouteSchema(currentPath, siteUrl);
 // Schema.org LocalBusiness structured data
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'AutoRepair',
   name: 'AutoElektronik - Сервиз и лаборатория за автомобилна електроника',
-  image: `${siteUrl}/images/service-lab.jpg`,
+  image: `${siteUrl}/images/autoelektronik-social-share.jpg`,
   '@id': `${siteUrl}/#organization`,
   url: siteUrl,
   telephone: '+359888123456',
@@ -77,8 +80,8 @@ const localBusinessSchema = {
     <meta name="generator" content={Astro.generator} />
     
     <!-- Primary Meta Tags -->
-    <title>{title} | AutoElektronik</title>
-    <meta name="title" content={`${title} | AutoElektronik`} />
+    <title>{fullTitle}</title>
+    <meta name="title" content={fullTitle} />
     <meta name="description" content={description} />
     {keywords && keywords.length > 0 && (
       <meta name="keywords" content={keywords.join(', ')} />
@@ -90,7 +93,7 @@ const localBusinessSchema = {
     <!-- Requirement #24: Facebook Open Graph Tags in <head> -->
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:title" content={`${title} | AutoElektronik`} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={fullOgImageUrl} />
     <meta property="og:image:width" content="1200" />
@@ -101,14 +104,15 @@ const localBusinessSchema = {
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={canonicalUrl} />
-    <meta name="twitter:title" content={`${title} | AutoElektronik`} />
+    <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={fullOgImageUrl} />
 
     <!-- Requirement #26: Google Search Console verification meta tag stub -->
     <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN_AUTOELEKTRONIK_CSCB700" />
 
-    <!-- Requirement #26: Google Analytics 4 (GA4) stub -->
+    <!-- Requirement #26: Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-AELEKTRON700"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -118,6 +122,9 @@ const localBusinessSchema = {
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+    {routeSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(routeSchema)} />
+    )}
 
     <!-- Favicon & Touch Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
