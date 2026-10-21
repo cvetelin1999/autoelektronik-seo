@@ -10,7 +10,7 @@ export const GET: APIRoute = async () => {
       title: 'Как се ремонтира и рециклира дефектирал ABS / ESP модул',
       description: 'Лабораторна видео демонстрация: процес по отваряне, преглед под микроскоп и микрозапояване на прекъснати бондинг проводници при автомобилен ABS модул ATE MK60.',
       contentLoc: `${siteUrl}/videos/abs-module-repair-lab.mp4`,
-      playerLoc: `${siteUrl}/uslugi/remont-na-abs-modul/`,
+      playerLoc: 'https://www.youtube-nocookie.com/embed/zmkAuDSU1Zo',
       duration: 275, // 04:35 in seconds
       publicationDate: '2026-10-20T10:00:00+02:00',
       familyFriendly: 'yes',
