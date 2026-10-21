@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 
 export const GET: APIRoute = async () => {
-  const siteUrl = 'https://autoelektronik-service.bg';
+  const siteUrl = 'https://autoelektronik-seo.tsvetelin-takiev.workers.dev';
 
   const imageEntries = [
     {
